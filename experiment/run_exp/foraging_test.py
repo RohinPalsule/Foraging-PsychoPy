@@ -1,9 +1,16 @@
 from psychopy import visual, core, event, data, sound
 import random
+import numpy as np
 
 # Initialize the window
+debug = True
+
 win = visual.Window(fullscr=True, color='white',allowStencil=True,units = "norm")
 
+if debug:
+    block_length = 30
+else:
+    block_length = 360
 # Define stimuli images
 image_prefix = "../run_exp/static/images/task_images/"
 land_img = image_prefix + "land.jpg"
@@ -22,6 +29,13 @@ intro_alien = image_prefix + "aliens/alien_planet-125.jpg"
 practice_alien = image_prefix + "aliens/alien_planet-124.jpg"
 timeout_img = image_prefix + "time_out.jpg"
 home_base = image_prefix + "home_base.jpg"
+planets = []
+planet_prefix = np.random.choice(np.arange(1,121),120,replace=False)
+for planet in planet_prefix:
+    planets.append(image_prefix + f"aliens/alien_planet-{planet}.jpg")
+gem = 0
+decay = None
+alien_index = 0
 
 questions = [
     "What affects the amount of bonus money you will earn?",
@@ -37,8 +51,43 @@ choices = [
 
 correct_answers = ["The number of gems you collect", "Is fixed", "False"]
 
+def rbeta(alpha, beta):
+    """Generates a random number from a Beta distribution."""
+    return np.random.beta(alpha, beta)
 
-def show_text(text, duration=0, image_path=None,x=0.5,y=0.6,height=0.3,text_height=0.07):
+def get_decay_rate(galaxy):
+    """Returns a decay rate sampled from a Beta distribution based on the galaxy type."""
+    galaxy_distributions = {
+        0: (13, 51),  # Rich planet
+        1: (50, 50),  # Neutral planet
+        2: (50, 12)   # Poor planet
+    }
+    
+    if galaxy in galaxy_distributions:
+        alpha, beta = galaxy_distributions[galaxy]
+        return rbeta(alpha, beta)
+    else:
+        raise ValueError("Galaxy index out of range. Must be 0, 1, or 2.")
+
+
+galaxy = None # Galaxy is initialized later and can randomly start between planet types
+
+
+def get_galaxy(first=False):
+    global galaxy
+    if first is True:
+        galaxy = np.random.randint(0,3)
+    else:
+        percentNum = np.random.randint(1,11)
+        if percentNum > 8:
+            newGalaxy = galaxy
+            while newGalaxy == galaxy:
+                newGalaxy = np.random.randint(0,3)
+            galaxy = newGalaxy
+        
+
+
+def show_text(text, duration=0, image_path=None,x=0.5,y=0.6,height=0.3,text_height=0.07,home=False):
     """Displays a text message either until a key is pressed or for a specified duration (Default unlimited duration)"""
     stim = visual.TextStim(win, text=text, color='black', height=text_height, pos=(0, height), wrapWidth=1.5)
     stim.draw()
@@ -48,11 +97,17 @@ def show_text(text, duration=0, image_path=None,x=0.5,y=0.6,height=0.3,text_heig
         stim_image.draw()
 
     win.flip()
-
-    if duration > 0:
-        core.wait(duration)
+    if home:
+        timer = core.Clock()
+        while timer.getTime() < duration:
+            keys = event.getKeys(keyList=["space"])
+            if "space" in keys:
+                break 
     else:
-        event.waitKeys(keyList=["space","a","l"])
+        if duration > 0:
+            core.wait(duration)
+        else:
+            event.waitKeys(keyList=["space","a","l"])
 
 def show_button_text(text,height=0.3,text_height=0.07):
     """Displays a text message either until a button is pressed or for a specified duration (Default unlimited duration)"""
@@ -64,10 +119,8 @@ def show_button_text(text,height=0.3,text_height=0.07):
     label1 = visual.TextStim(win, text="Practice game again", pos=(-0.3, -0.1), color='black', height=0.04)
     label2 = visual.TextStim(win, text="Move on to the real game", pos=(0.3, -0.1), color='black', height=0.04)
 
-    # Create mouse object
     mouse = event.Mouse()
 
-    # Display everything
     while True:
         button1.draw()
         button2.draw()
@@ -75,16 +128,12 @@ def show_button_text(text,height=0.3,text_height=0.07):
         label2.draw()
         stim.draw()
         win.flip()
-        # Check for clicks
         if mouse.isPressedIn(button1):
-            dig_instruction()
+            dig_instruction(gems=barrel_img)
             show_button_text("Now that you know how to dig for space treasure and travel to new planets, you can start exploring the universe!\n\nDo you want to play the practice game again or get started with the real game?")
             break
         elif mouse.isPressedIn(button2):
             break
-
-
-
 
 def get_keyboard_response(valid_keys, timeout=2):
     """Waits for a keyboard response within a given time"""
@@ -101,17 +150,14 @@ def show_image(img_path, duration=1.5):
 
 dig_sequence = [image_prefix+"dig.jpg", image_prefix+"land.jpg", image_prefix+"dig.jpg"]
 index = 0
-def show_animation(images, frame_time=0.667,test=False,gems=hundred_img):
-    global index
+def show_animation(images, frame_time=0.667,test=False,gem_img=hundred_img):
+    global decay,gem,galaxy
     """Displays an animation sequence by flipping through images."""
     for img in images:
         stim = visual.ImageStim(win, image=img, size=(1.2,1.2))
         stim.draw()
         win.flip()
         core.wait(frame_time)
-    if isinstance(gems,list):
-        gem_img = gems[index]
-    else: gem_img = gems
     stim = visual.ImageStim(win, image=gem_img, size=(1.2,1.2))
     stim.draw()
     if test == False:
@@ -121,11 +167,14 @@ def show_animation(images, frame_time=0.667,test=False,gems=hundred_img):
         keys = event.waitKeys(maxWait=2,keyList= ['a','l'])
         if keys:
             if 'a' in keys:
-                dig_instruction(gems=gem_img)
-                index += 1
+                if decay:
+                    gem = round(decay*gem)
+                    gem_path = image_prefix + f"gems/{gem}.jpg"
+                    dig_instruction(gems=gem_path)
+                else:
+                    dig_instruction(gems=gem_img)
             if 'l' in keys:
-                travel_trial()
-                index =0
+                    travel_trial()
         else:
             too_slow()
             dig_instruction(gems=gem_img)
@@ -138,12 +187,7 @@ def too_slow():
 
 
 def dig_instruction(practice=False,gems=hundred_img):
-    show_animation(dig_sequence, frame_time=0.667,test=practice,gems=gems)
-
-def dig_trial():
-    """Simulates the digging trial"""
-    show_image(dig_img, 1)
-    return random.randint(1, 135)  # Simulating reward collection
+    show_animation(dig_sequence, frame_time=0.667,test=practice,gem_img=gems)
 
 def travel_trial():
     """Simulates travel sequence"""
@@ -151,7 +195,8 @@ def travel_trial():
         stim = visual.ImageStim(win, image=img, size=(1.2,1.2))
         stim.draw()
         win.flip()
-        core.wait(0.5)
+        core.wait(1)
+    core.wait(1)
     win.flip()
 
 
@@ -212,6 +257,28 @@ def run_quiz(questions,choices,correct_answers):
     win.units = "norm"
     event.waitKeys(keyList=['space'])
     
+def rest_homebase():
+    """When participants need to rest at homebase"""
+    show_text(text="You have been traveling for a while. Time to take a rest at home base!\n\nWhen you are ready to move one, press the space bar. You have up to a minute of rest.",height=0.5,image_path=home_base,x=1,y=1,duration=60,home=True)
+    show_text("The task is continuing now",height=0,duration=1.5)
+
+def block_loop(blockNum):
+    """Main task loop divided into blocks"""
+    global gem,decay,alien_index
+
+    timer = core.Clock()
+    while timer.getTime() < block_length: 
+        if alien_index >= len(planets):
+            alien_index = 0
+        get_galaxy(first=True)
+        decay = get_decay_rate(galaxy=galaxy)
+        gem = round(np.max([np.min([np.random.normal(100,5),135]),0]))
+        gem_path = image_prefix + f"gems/{gem}.jpg"
+        show_image(img_path=planets[alien_index],duration=5)
+        dig_instruction(gems=gem_path)
+        alien_index += 1
+    win.flip()
+    core.wait(1)
 
 
 def save_data(participant_id, trials):
@@ -246,7 +313,7 @@ get_keyboard_response(["space"])
 show_text("If you’re not fast enough in making a choice, you’ll have to wait a few seconds before you can make another one.\n\nYou can’t dig for more gems or travel to new planets. You just have to sit and wait.\n\n[Press the space bar to continue]",image_path=timeout_img,height=0.5,x=1,y=1)
 get_keyboard_response(["space"])
 
-show_text("After digging and traveling for a while, you’ll be able to take a break at home base.\n\nYou can spend at most 1 minute at home base — there are still a lot of gems left to collect!\n\nYou will spend 30 minutes mining gems and traveling to new planets no matter what.\n\nYou will visit home base every 6 minutes, so, you will visit home base four times during the game.\n\n[Press the space bar to continue]",image_path=home_base,height=0.6,x=0.8,y=0.8,text_height=0.04)
+show_text("After digging and traveling for a while, you’ll be able to take a break at home base.\n\nYou can spend at most 1 minute at home base — there are still a lot of gems left to collect!\n\nYou will spend 30 minutes mining gems and traveling to new planets no matter what.\n\nYou will visit home base every 6 minutes, so, you will visit home base four times during the game.\n\n[Press the space bar to continue]",image_path=home_base,height=0.5,x=1,y=1,text_height=0.04)
 get_keyboard_response(["space"])
 
 run_quiz(questions=questions,choices=choices,correct_answers=correct_answers)
@@ -254,36 +321,31 @@ run_quiz(questions=questions,choices=choices,correct_answers=correct_answers)
 show_text("Now, you'll play a practice game, so you can practice mining space treasure and traveling to new planets.\n\nIn the practice game, you'll be digging up barrels of gems. But, in the real game, you'll be digging up the gems themselves.\n\nPress the space bar to begin practice!")
 get_keyboard_response(["space"])
 
-show_image(img_path=practice_alien)
+show_image(img_path=practice_alien,duration=5)
 dig_instruction(gems=barrel_img)
 
 show_button_text(text="Now that you know how to dig for space treasure and travel to new planets, you can start exploring the universe!\n\nDo you want to play the practice game again or get started with the real game?")
 
-show_text("end")
+block_loop(1)
+rest_homebase()
 
-win.close()
-core.quit()
+block_loop(2)
+rest_homebase()
 
-# Run practice trials
-for _ in range(2):
-    practice_trial()
+block_loop(3)
+rest_homebase()
 
-# Run quiz
+block_loop(4)
+rest_homebase()
+
+block_loop(5)
+rest_homebase()
+
+block_loop(6)
+rest_homebase()
 
 
-# Main experiment loop
-trials = []
-participant_id = random.randint(1000, 9999)
-for _ in range(5):  # 5 trials for now
-    choice = decision_trial()
-    if choice == "dig":
-        reward = dig_trial()
-        trials.append(("dig", reward))
-    elif choice == "travel":
-        travel_trial()
-        trials.append(("travel", 0))
-    else:
-        trials.append(("timeout", 0))
+
 
 # Save data
 # save_data(participant_id, trials)
