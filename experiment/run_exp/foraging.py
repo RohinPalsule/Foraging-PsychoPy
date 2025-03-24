@@ -3,6 +3,7 @@ import random
 import numpy as np
 import csv
 import sys 
+import os
 
 # Initialize the window
 debug = True
@@ -576,21 +577,23 @@ def block_loop(blockNum):
 
 def save_data(participant_id, trials):
     """Save collected data to a CSV file, automatically detecting headers."""
-    filename = f"participant_{participant_id}.csv"
+    folder_name = "data"
+    os.makedirs(folder_name, exist_ok=True) 
+
+    filename = os.path.join(folder_name, f"participant_{participant_id}.csv")
 
     if not trials:
         print("No trial data to save.")
-        return  # Prevents writing an empty file
+        return 
 
-    # Extract headers dynamically from the first trial's keys
     headers = trials[0].keys()  
 
     with open(filename, "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=headers)
-        writer.writeheader()  # Write column names
+        writer.writeheader()
         
         for trial in trials:
-            writer.writerow(trial)  # Write each trial's data as a row
+            writer.writerow(trial) 
 
     print(f"Data saved to {filename}")
 
