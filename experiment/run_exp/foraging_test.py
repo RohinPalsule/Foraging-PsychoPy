@@ -39,6 +39,8 @@ gem = 0
 decay = None
 alien_index = 0
 prt_clock = core.Clock()
+block_time = 0
+failedNum = 0
 
 if len(sys.argv) < 2:
     print("Error: No participant ID provided.")
@@ -53,14 +55,18 @@ study = []
 study.append({
     "ID": participant_id,
     "TrialType":f"InitializeStudy",
+    "BlockNum": "",
     "AlienOrder": planet_prefix,
+    "QuizResp": "",
+    "QuizFailedNum": "",
     "TimeElapsed": experiment_clock.getTime(),
     "RT": "",
     "PRT": "",
     "Galaxy": "",
     "DecayRate": "",
     "AlienIndex": "",
-    "GemValue": ""
+    "GemValue": "",
+    "TimeInBlock": ""
 })
 
 questions = [
@@ -138,44 +144,40 @@ def show_text(text, duration=0, image_path=None,x=0.5,y=0.6,height=0.3,text_heig
             study.append({
                 "ID": "",
                 "TrialType":f"too_slow",
+                "BlockNum": "",
                 "AlienOrder": "",
+                "QuizResp": "",
+                "QuizFailedNum": "",
                 "TimeElapsed": experiment_clock.getTime(),
                 "RT": "",
                 "PRT": "",
                 "Galaxy": "",
                 "DecayRate": "",
                 "AlienIndex": "",
-                "GemValue": ""
+                "GemValue": "",
+                "TimeInBlock": ""
             })
            
         else:
             event.waitKeys(keyList=["space","a","l"])
-            if text_index < 10:
+            if home == False:
                 study.append({
                     "ID": "",
                     "TrialType":f"Instruction_{text_index}",
+                    "BlockNum": "",
                     "AlienOrder": "",
+                    "QuizResp": "",
+                    "QuizFailedNum": "",
                     "TimeElapsed": experiment_clock.getTime(),
                     "RT": "",
                     "PRT": "",
                     "Galaxy": "",
                     "DecayRate": "",
                     "AlienIndex": "",
-                    "GemValue": ""
+                    "GemValue": "",
+                    "TimeInBlock": ""
                 })
-            else:
-                study.append({
-                    "ID": "",
-                    "TrialType":f"Home_Base",
-                    "AlienOrder": "",
-                    "TimeElapsed": experiment_clock.getTime(),
-                    "RT": "",
-                    "PRT": "",
-                    "Galaxy": "",
-                    "DecayRate": "",
-                    "AlienIndex": "",
-                    "GemValue": ""
-                })
+            
 
 def show_button_text(text,height=0.3,text_height=0.07):
     """Displays a text message either until a button is pressed or for a specified duration (Default unlimited duration)"""
@@ -203,14 +205,18 @@ def show_button_text(text,height=0.3,text_height=0.07):
             study.append({
                 "ID": "",
                 "TrialType":f"Instruction_{text_index}",
+                "BlockNum": "",
                 "AlienOrder": "",
+                "QuizResp": "",
+                "QuizFailedNum": "",
                 "TimeElapsed": experiment_clock.getTime(),
                 "RT": "",
                 "PRT": "",
                 "Galaxy": "",
                 "DecayRate": "",
                 "AlienIndex": "",
-                "GemValue": ""
+                "GemValue": "",
+                "TimeInBlock": ""
             })
             dig_instruction(gems=barrel_img)
             show_button_text("Now that you know how to dig for space treasure and travel to new planets, you can start exploring the universe!\n\nDo you want to play the practice game again or get started with the real game?")
@@ -219,14 +225,18 @@ def show_button_text(text,height=0.3,text_height=0.07):
             study.append({
                 "ID": "",
                 "TrialType":f"Instruction_{text_index}",
+                "BlockNum": "",
                 "AlienOrder": "",
+                "QuizResp": "",
+                "QuizFailedNum": "",
                 "TimeElapsed": experiment_clock.getTime(),
                 "RT": "",
                 "PRT": "",
                 "Galaxy": "",
                 "DecayRate": "",
                 "AlienIndex": "",
-                "GemValue": ""
+                "GemValue": "",
+                "TimeInBlock": ""
             })
             break
 
@@ -274,14 +284,18 @@ def show_animation(images, frame_time=0.667,test=False,gem_img=hundred_img):
                     study.append({
                         "ID": "",
                         "TrialType":f"Dig_Trial_{dig_index}",
+                        "BlockNum": "",
                         "AlienOrder": "",
+                        "QuizResp": "",
+                        "QuizFailedNum": "",
                         "TimeElapsed": experiment_clock.getTime(),
                         "RT": RT,
                         "PRT": "",
                         "Galaxy": "",
                         "DecayRate": "",
                         "AlienIndex": "",
-                        "GemValue": gem
+                        "GemValue": gem,
+                        "TimeInBlock": ""
                     })
                     gem = round(decay*gem)
                     gem_path = image_prefix + f"gems/{gem}.jpg"
@@ -289,18 +303,40 @@ def show_animation(images, frame_time=0.667,test=False,gem_img=hundred_img):
                 else:
                     dig_instruction(gems=gem_img)
             if 'l' in key:
-                    study.append({
-                        "ID": "",
-                        "TrialType":f"Travel_Trial",
-                        "AlienOrder": "",
-                        "TimeElapsed": experiment_clock.getTime(),
-                        "RT": RT,
-                        "PRT": prt_clock.getTime(),
-                        "Galaxy": "",
-                        "DecayRate": "",
-                        "AlienIndex": "",
-                        "GemValue": gem
-                    })
+                    if decay:
+                        study.append({
+                            "ID": "",
+                            "TrialType":f"Travel_Trial",
+                            "BlockNum": "",
+                            "AlienOrder": "",
+                            "QuizResp": "",
+                            "QuizFailedNum": "",
+                            "TimeElapsed": experiment_clock.getTime(),
+                            "RT": RT,
+                            "PRT": prt_clock.getTime(),
+                            "Galaxy": "",
+                            "DecayRate": "",
+                            "AlienIndex": "",
+                            "GemValue": gem,
+                            "TimeInBlock": ""
+                        })
+                    else:
+                        study.append({
+                            "ID": "",
+                            "TrialType":f"Practice_Trial",
+                            "BlockNum": "",
+                            "AlienOrder": "",
+                            "QuizResp": "",
+                            "QuizFailedNum": "",
+                            "TimeElapsed": experiment_clock.getTime(),
+                            "RT": RT,
+                            "PRT": "",
+                            "Galaxy": "",
+                            "DecayRate": "",
+                            "AlienIndex": "",
+                            "GemValue": "",
+                            "TimeInBlock": ""
+                        })
                     travel_trial()
         else:
             too_slow()
@@ -308,14 +344,18 @@ def show_animation(images, frame_time=0.667,test=False,gem_img=hundred_img):
             study.append({
                 "ID": "",
                 "TrialType":f"Too_slow",
+                "BlockNum": "",
                 "AlienOrder": "",
+                "QuizResp": "",
+                "QuizFailedNum": "",
                 "TimeElapsed": experiment_clock.getTime(),
                 "RT": "NA",
                 "PRT": "",
                 "Galaxy": "",
                 "DecayRate": "",
                 "AlienIndex": "",
-                "GemValue": gem
+                "GemValue": gem,
+                "TimeInBlock": ""
             })
             if decay:
                 gem = round(decay*gem)
@@ -328,14 +368,18 @@ def show_animation(images, frame_time=0.667,test=False,gem_img=hundred_img):
         study.append({
             "ID": "",
             "TrialType":f"Dig_Instruct",
+            "BlockNum": "",
             "AlienOrder": "",
+            "QuizResp": "",
+            "QuizFailedNum": "",
             "TimeElapsed": experiment_clock.getTime(),
             "RT": "",
             "PRT": "",
             "Galaxy": "",
             "DecayRate": "",
             "AlienIndex": "",
-            "GemValue": ""
+            "GemValue": "",
+            "TimeInBlock": ""
         })
         win.flip()
         core.wait(1)
@@ -359,14 +403,18 @@ def travel_trial():
     study.append({
         "ID": "",
         "TrialType":f"Travel_Planet",
+        "BlockNum": "",
         "AlienOrder": "",
+        "QuizResp": "",
+        "QuizFailedNum": "",
         "TimeElapsed": experiment_clock.getTime(),
         "RT": "",
         "PRT": "",
         "Galaxy": "",
         "DecayRate": "",
         "AlienIndex": "",
-        "GemValue": ""
+        "GemValue": "",
+        "TimeInBlock": ""
     })
     win.flip()
 
@@ -390,6 +438,7 @@ def practice_trial():
 
 def run_quiz(questions,choices,correct_answers):
     """Displays a multiple-choice quiz and checks answers."""
+    global failedNum
     form_items = []
     win.units = "height"
     for i in range(len(questions)):
@@ -413,13 +462,34 @@ def run_quiz(questions,choices,correct_answers):
         if responses[i] != correct_answers[i]:
             correct = False
             break  # Stop checking once an incorrect answer is found
-
+    study.append({
+        "ID": "",
+        "TrialType":f"practice_quiz",
+        "BlockNum": "",
+        "AlienOrder": "",
+        "QuizResp": responses,
+        "QuizFailedNum": failedNum,
+        "TimeElapsed": experiment_clock.getTime(),
+        "RT": "",
+        "PRT": "",
+        "Galaxy":"",
+        "DecayRate": "",
+        "AlienIndex": "",
+        "GemValue": "",
+        "TimeInBlock": ""
+    })
     # Provide feedback based on correctness
     if correct==True:
         feedback_text = "Correct! Press SPACE to continue."
     else:
-        feedback_text = "Incorrect. Try again."
-        return repeat_inst()
+        feedback_text = "Incorrect. Press SPACE to reread the instructions and ry again."
+        failedNum +=1
+        feedback = visual.TextStim(win, text=feedback_text, color='black', height=0.07)
+        feedback.draw()
+        win.flip()
+        win.units = "norm"
+        event.waitKeys(keyList=['space'])
+        repeat_inst()
 
     # Show feedback
     feedback = visual.TextStim(win, text=feedback_text, color='black', height=0.07)
@@ -442,25 +512,29 @@ def repeat_inst():
 
 def rest_homebase():
     """When participants need to rest at homebase"""
-    global study,experiment_clock
+    global study,experiment_clock,block_time
     show_text(text="You have been traveling for a while. Time to take a rest at home base!\n\nWhen you are ready to move one, press the space bar. You have up to a minute of rest.",height=0.5,image_path=home_base,x=1,y=1,duration=60,home=True)
     show_text("The task is continuing now",height=0,duration=1.5)
     study.append({
         "ID": "",
-        "TrialType":f"block_end",
+        "TrialType":f"home_base",
+        "BlockNum": "",
         "AlienOrder": "",
+        "QuizResp": "",
+        "QuizFailedNum": "",
         "TimeElapsed": experiment_clock.getTime(),
         "RT": "",
         "PRT": "",
         "Galaxy":"",
         "DecayRate": "",
         "AlienIndex": "",
-        "GemValue": ""
+        "GemValue": "",
+        "TimeInBlock": block_time
     })
 
 def block_loop(blockNum):
     """Main task loop divided into blocks"""
-    global gem,decay,alien_index,study,first_planet
+    global gem,decay,alien_index,study,first_planet,block_time
     first_trial = True
     timer = core.Clock()
     while timer.getTime() < block_length: 
@@ -475,21 +549,27 @@ def block_loop(blockNum):
         decay = get_decay_rate(galaxy=galaxy)
         gem = round(np.max([np.min([np.random.normal(100,5),135]),0]))
         gem_path = image_prefix + f"gems/{gem}.jpg"
-        show_image(img_path=planets[alien_index],duration=5)
-        dig_instruction(gems=gem_path)
-        alien_index += 1
         study.append({
             "ID": "",
             "TrialType":f"start_loop",
+            "BlockNum": blockNum,
             "AlienOrder": "",
+            "QuizResp": "",
+            "QuizFailedNum": "",
             "TimeElapsed": experiment_clock.getTime(),
             "RT": "",
             "PRT": "",
             "Galaxy": galaxy,
             "DecayRate": decay,
             "AlienIndex": alien_index,
-            "GemValue": ""
+            "GemValue": "",
+            "TimeInBlock": ""
         })
+        show_image(img_path=planets[alien_index],duration=5)
+        dig_instruction(gems=gem_path)
+        alien_index += 1
+        
+    block_time = timer.getTime()
     win.flip()
     core.wait(1)
 
@@ -517,34 +597,26 @@ def save_data(participant_id, trials):
 # Experiment flow
 
 show_text("Howdy! In this experiment, you’ll be an explorer traveling through space to collect space treasure. Your mission is to collect as much treasure as possible. Press the space bar to begin reading the instructions!",image_path=intro_ast,y=0.7,x=0.4)
-get_keyboard_response(["space"])
 
 show_text("As a space explorer, you’ll visit different planets to dig for space treasure, these pink gems. The more space treasure you mine, the more bonus payment you’ll win! \n\n[Press the space bar to continue]",image_path=intro_gem_img)
-get_keyboard_response(["space"])
 
 show_text("When you’ve arrived at a new planet, you will dig once.\n\nThen, you get to decide if you want to stay on the planet and dig again or travel to a new planet and dig there. \n\nTo stay and dig, press the letter ‘A’ on the keyboard. Try pressing it now!",image_path=land_img,height=0.6,x=1,y=1)
-get_keyboard_response(["a"])
 
 dig_instruction(practice=True)
 
 show_text("The longer you mine a planet the fewer gems you’ll get with each dig.\n\nWhen gems are running low, you may want to travel to a new planet that hasn’t been overmined.\n\nPlanets are very far apart in this galaxy, so it will take some time to travel between them.\n\nThere are lots and lots of planets for you to visit, so you won’t be able to return to any planets you’ve already visited.\n\nTo leave this planet and travel to a new one, press the letter ‘L’ on the keyboard. Try pressing it now!",image_path=intro_travel,height=0.6,x=0.8,y=0.8,text_height=0.05)
-get_keyboard_response(["l"])
 
 travel_trial()
 
 show_text("When you arrive at a new planet, an alien from that planet will greet you!\n\n[Press the space bar to continue]",image_path=intro_alien,height=0.6,y=1,x=1)
-get_keyboard_response(["space"])
 
 show_text("If you’re not fast enough in making a choice, you’ll have to wait a few seconds before you can make another one.\n\nYou can’t dig for more gems or travel to new planets. You just have to sit and wait.\n\n[Press the space bar to continue]",image_path=timeout_img,height=0.5,x=1,y=1)
-get_keyboard_response(["space"])
 
 show_text("After digging and traveling for a while, you’ll be able to take a break at home base.\n\nYou can spend at most 1 minute at home base — there are still a lot of gems left to collect!\n\nYou will spend 30 minutes mining gems and traveling to new planets no matter what.\n\nYou will visit home base every 6 minutes, so, you will visit home base four times during the game.\n\n[Press the space bar to continue]",image_path=home_base,height=0.5,x=1,y=1,text_height=0.04)
-get_keyboard_response(["space"])
 
 run_quiz(questions=questions,choices=choices,correct_answers=correct_answers)
 
 show_text("Now, you'll play a practice game, so you can practice mining space treasure and traveling to new planets.\n\nIn the practice game, you'll be digging up barrels of gems. But, in the real game, you'll be digging up the gems themselves.\n\nPress the space bar to begin practice!")
-get_keyboard_response(["space"])
 
 show_image(img_path=practice_alien,duration=5)
 dig_instruction(gems=barrel_img)
@@ -567,10 +639,6 @@ block_loop(5)
 rest_homebase()
 
 block_loop(6)
-rest_homebase()
-
-
-
 
 #Save data
 save_data(participant_id, study)
