@@ -473,6 +473,12 @@ def run_quiz(questions,choices,correct_answers):
     # Provide feedback based on correctness
     if correct==True:
         feedback_text = "Correct! Press SPACE to continue."
+        # Show feedback
+        feedback = visual.TextStim(win, text=feedback_text, color='black', height=0.07) # Show correct or incorrect
+        feedback.draw()
+        win.flip()
+        win.units = "norm" # Change units back
+        event.waitKeys(keyList=['space'])
     else:
         feedback_text = "Incorrect. Press SPACE to reread the instructions and ry again."
         failedNum +=1 # log how many times they fail the quiz
@@ -483,12 +489,7 @@ def run_quiz(questions,choices,correct_answers):
         event.waitKeys(keyList=['space'])
         repeat_inst() # Repeat initial instructions along with quiz
 
-    # Show feedback
-    feedback = visual.TextStim(win, text=feedback_text, color='black', height=0.07) # Show correct or incorrect
-    feedback.draw()
-    win.flip()
-    win.units = "norm" # Change units back
-    event.waitKeys(keyList=['space'])
+
 
 # Repeat instructions if they fail the quiz
 def repeat_inst():
@@ -500,7 +501,7 @@ def repeat_inst():
     travel_trial()
     show_text("When you arrive at a new planet, an alien from that planet will greet you!\n\n[Press the space bar to continue]",image_path=intro_alien,height=0.6,y=1,x=1)
     show_text("If you’re not fast enough in making a choice, you’ll have to wait a few seconds before you can make another one.\n\nYou can’t dig for more gems or travel to new planets. You just have to sit and wait.\n\n[Press the space bar to continue]",image_path=timeout_img,height=0.5,x=1,y=1)
-    show_text("After digging and traveling for a while, you’ll be able to take a break at home base.\n\nYou can spend at most 1 minute at home base — there are still a lot of gems left to collect!\n\nYou will spend 30 minutes mining gems and traveling to new planets no matter what.\n\nYou will visit home base every 6 minutes, so, you will visit home base four times during the game.\n\n[Press the space bar to continue]",image_path=home_base,height=0.5,x=1,y=1,text_height=0.04)
+    show_text("After digging and traveling for a while, you’ll be able to take a break at home base.\n\nYou can spend at most 1 minute at home base — there are still a lot of gems left to collect!\n\nYou will spend 30 minutes mining gems and traveling to new planets no matter what.\n\nYou will visit home base every 6 minutes, so, you will visit home base four times during the game.\n\n[Press the space bar to continue]",image_path=home_base,height=0.5,x=1,y=1,text_height=0.05)
     run_quiz(questions=questions,choices=choices,correct_answers=correct_answers)
 
 # 1 minute rest at homebase for breaks
@@ -612,11 +613,11 @@ show_text("When you arrive at a new planet, an alien from that planet will greet
 
 show_text("If you’re not fast enough in making a choice, you’ll have to wait a few seconds before you can make another one.\n\nYou can’t dig for more gems or travel to new planets. You just have to sit and wait.\n\n[Press the space bar to continue]",image_path=timeout_img,height=0.5,x=1,y=1)
 
-show_text("After digging and traveling for a while, you’ll be able to take a break at home base.\n\nYou can spend at most 1 minute at home base — there are still a lot of gems left to collect!\n\nYou will spend 30 minutes mining gems and traveling to new planets no matter what.\n\nYou will visit home base every 6 minutes, so, you will visit home base four times during the game.\n\n[Press the space bar to continue]",image_path=home_base,height=0.5,x=1,y=1,text_height=0.04)
+show_text("After digging and traveling for a while, you’ll be able to take a break at home base.\n\nYou can spend at most 1 minute at home base — there are still a lot of gems left to collect!\n\nYou will spend 30 minutes mining gems and traveling to new planets no matter what.\n\nYou will visit home base every 6 minutes, so, you will visit home base four times during the game.\n\n[Press the space bar to continue]",image_path=home_base,height=0.5,x=1,y=1,text_height=0.05)
 
 run_quiz(questions=questions,choices=choices,correct_answers=correct_answers)
 
-show_text("Now, you'll play a practice game, so you can practice mining space treasure and traveling to new planets.\n\nIn the practice game, you'll be digging up barrels of gems. But, in the real game, you'll be digging up the gems themselves.\n\nPress the space bar to begin practice!")
+show_text("Now, you'll play a practice game, so you can practice mining space treasure and traveling to new planets.\n\nIn the practice game, you'll be digging up barrels of gems. But, in the real game, you'll be digging up the gems themselves.\n\nPress the space bar to begin practice!", height=0)
 
 show_image(img_path=practice_alien,duration=5)
 dig_instruction(gems=barrel_img)
