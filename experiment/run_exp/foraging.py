@@ -6,14 +6,18 @@ import sys
 import os
 
 # Initialize the window
-debug = True
+
 
 win = visual.Window(fullscr=True, color='white',allowStencil=True,units = "norm")
 experiment_clock = core.Clock()
+
+# Debug switch along with block times which can be adjusted
+debug = True
 if debug:
     block_length = 30
 else:
     block_length = 360
+
 # Define stimuli images
 image_prefix = "../run_exp/static/images/task_images/"
 land_img = image_prefix + "land.jpg"
@@ -22,7 +26,7 @@ space_treasure_img = image_prefix + "gems/100.jpg"
 example_gem_sequence = [image_prefix + "gems/100.jpg",image_prefix + "gems/84.jpg",image_prefix + "gems/73.jpg",image_prefix + "gems/63.jpg",image_prefix + "gems/41.jpg",image_prefix + "gems/12.jpg"]
 travel_sequence = []
 for i in range(1,10):
-    travel_sequence.append(image_prefix+f"rocket-0{i}.jpg")
+    travel_sequence.append(image_prefix+f"rocket-0{i}.jpg") # For the rocket animation (there is only 9 images but there is a 1 second delay at the end for 10 seconds)
 intro_gem_img = image_prefix + "pink_gem.jpg"
 intro_ast = image_prefix + "opening_img-01.jpg"
 barrel_img = image_prefix + "barrel_text.jpg"
@@ -33,17 +37,22 @@ practice_alien = image_prefix + "aliens/alien_planet-124.jpg"
 timeout_img = image_prefix + "time_out.jpg"
 home_base = image_prefix + "home_base.jpg"
 planets = []
-planet_prefix = np.random.choice(np.arange(1,121),120,replace=False)
+planet_prefix = np.random.choice(np.arange(1,121),120,replace=False) # Randomize order of aliens, but made so they do not repeat
 for planet in planet_prefix:
     planets.append(image_prefix + f"aliens/alien_planet-{planet}.jpg")
 gem = 0
 decay = None
 alien_index = 0
-prt_clock = core.Clock()
+prt_clock = core.Clock() # Initialized prt timer
 block_time = 0
+text_index = 0
 failedNum = 0
+dig_index = 0
+dig_sequence = [image_prefix+"dig.jpg", image_prefix+"land.jpg", image_prefix+"dig.jpg"]
+index = 0
+first_planet = True
 
-if len(sys.argv) < 2:
+if len(sys.argv) < 2: # Call participant ID in terminal
     print("Error: No participant ID provided.")
     print("Usage: python3 experiment.py <participant_id>")
     sys.exit(1)  # Exit with error code 1
@@ -53,6 +62,7 @@ participant_id = sys.argv[1]
 
 study = []
 
+# Initial data format -- What the csv reader takes as column names
 study.append({
     "ID": participant_id,
     "TrialType":f"InitializeStudy",
@@ -70,6 +80,7 @@ study.append({
     "TimeInBlock": ""
 })
 
+# For practice quiz
 questions = [
     "What affects the amount of bonus money you will earn?",
     "The length of this experiment",
@@ -84,10 +95,12 @@ choices = [
 
 correct_answers = ["The number of gems you collect", "Is fixed", "False"]
 
+# For decay rate
 def rbeta(alpha, beta):
     """Generates a random number from a Beta distribution."""
     return np.random.beta(alpha, beta)
 
+# Takes galaxy type to know which distribution to create (poor, neutral, rich)
 def get_decay_rate(galaxy):
     """Returns a decay rate sampled from a Beta distribution based on the galaxy type."""
     galaxy_distributions = {
@@ -105,7 +118,7 @@ def get_decay_rate(galaxy):
 
 galaxy = None # Galaxy is initialized later and can randomly start between planet types
 
-
+# If first is true it randomly chooses a planet type but if not it uses the 80% stay 20% switch
 def get_galaxy(first=False):
     global galaxy
     if first is True:
@@ -118,29 +131,29 @@ def get_galaxy(first=False):
                 newGalaxy = np.random.randint(0,3)
             galaxy = newGalaxy
         
-text_index = 0
 
 def show_text(text, duration=0, image_path=None,x=0.5,y=0.6,height=0.3,text_height=0.07,home=False):
     """Displays a text message either until a key is pressed or for a specified duration (Default unlimited duration)"""
     global text_index,study,experiment_clock
-    text_index += 1
+    text_index += 1 # Used for trial data descriptions
 
-    stim = visual.TextStim(win, text=text, color='black', height=text_height, pos=(0, height), wrapWidth=1.5)
-    stim.draw()
+    stim = visual.TextStim(win, text=text, color='black', height=text_height, pos=(0, height), wrapWidth=1.5) # Adds whatever text is called
+    stim.draw() # Pushes it to screen
 
+    # If there is an image (specified by image_path) it will show it on the screen
     if image_path:
         stim_image = visual.ImageStim(win, image=image_path, size=(x, y), pos=(0, -0.3))  # Adjust size as needed
         stim_image.draw()
 
-    win.flip()
-    if home:
+    win.flip() # Resets screen
+    if home: # Code for when they are at homebase, as there is a 1 minute timer that can be ended early with a keypress
         timer = core.Clock()
         while timer.getTime() < duration:
             keys = event.getKeys(keyList=["space"])
             if "space" in keys:
                 break 
     else:
-        if duration > 0:
+        if duration > 0: # Only timed instruction is for the too slow img
             core.wait(duration)
             study.append({
                 "ID": "",
@@ -157,9 +170,9 @@ def show_text(text, duration=0, image_path=None,x=0.5,y=0.6,height=0.3,text_heig
                 "AlienIndex": "",
                 "GemValue": "",
                 "TimeInBlock": ""
-            })
-           
+            }) 
         else:
+            # Only keys taken in exp (need to change to specify which key to use)
             event.waitKeys(keyList=["space","a","l"])
             if home == False:
                 study.append({
@@ -179,7 +192,7 @@ def show_text(text, duration=0, image_path=None,x=0.5,y=0.6,height=0.3,text_heig
                     "TimeInBlock": ""
                 })
             
-
+# Function below is for moving on to real game or continuing practice
 def show_button_text(text,height=0.3,text_height=0.07):
     """Displays a text message either until a button is pressed or for a specified duration (Default unlimited duration)"""
     global text_index,experiment_clock,study
@@ -202,7 +215,7 @@ def show_button_text(text,height=0.3,text_height=0.07):
         label2.draw()
         stim.draw()
         win.flip()
-        if mouse.isPressedIn(button1):
+        if mouse.isPressedIn(button1): # When practice is chosen again
             study.append({
                 "ID": "",
                 "TrialType":f"Instruction_{text_index}",
@@ -219,10 +232,11 @@ def show_button_text(text,height=0.3,text_height=0.07):
                 "GemValue": "",
                 "TimeInBlock": ""
             })
+            # Show the practice sequence again and then when they travel show this same button text
             dig_instruction(gems=barrel_img)
             show_button_text("Now that you know how to dig for space treasure and travel to new planets, you can start exploring the universe!\n\nDo you want to play the practice game again or get started with the real game?")
             break
-        elif mouse.isPressedIn(button2):
+        elif mouse.isPressedIn(button2): # When moving to the main game
             study.append({
                 "ID": "",
                 "TrialType":f"Instruction_{text_index}",
@@ -239,14 +253,9 @@ def show_button_text(text,height=0.3,text_height=0.07):
                 "GemValue": "",
                 "TimeInBlock": ""
             })
-            break
+            break # Continue to next function
 
-def get_keyboard_response(valid_keys, timeout=2):
-    """Waits for a keyboard response within a given time"""
-    timer = core.Clock()
-    keys = event.waitKeys(maxWait=timeout, keyList=valid_keys, timeStamped=timer)
-    return keys
-
+# Shows an image for some duration
 def show_image(img_path, duration=1.5):
     """Displays an image for a given duration"""
     stim = visual.ImageStim(win, image=img_path,size=(1.2,1.2))
@@ -254,33 +263,31 @@ def show_image(img_path, duration=1.5):
     win.flip()
     core.wait(duration)
 
-dig_index = 0
-dig_sequence = [image_prefix+"dig.jpg", image_prefix+"land.jpg", image_prefix+"dig.jpg"]
-index = 0
-first_planet = True
+# Function for digging gems and the subseqent trials
 def show_animation(images, frame_time=0.667,test=False,gem_img=hundred_img):
-    global decay,gem,galaxy,study,experiment_clock,dig_index,first_planet,prt_clock
     """Displays an animation sequence by flipping through images."""
-    for img in images:
+    global decay,gem,galaxy,study,experiment_clock,dig_index,first_planet,prt_clock
+
+    for img in images: # Flips through img in images at speed frame_time
         stim = visual.ImageStim(win, image=img, size=(1.2,1.2))
         stim.draw()
         win.flip()
         core.wait(frame_time)
-    stim = visual.ImageStim(win, image=gem_img, size=(1.2,1.2))
+    stim = visual.ImageStim(win, image=gem_img, size=(1.2,1.2)) # After animation shows image with gems with img path gem_img
     stim.draw()
-    if test == False:
-        response_clock = core.Clock()
+    if test == False: # Test is for the instruction digging trial, not practice nor main phase
+        response_clock = core.Clock() # for rt data collection
         if first_planet:
-            prt_clock = core.Clock()
+            prt_clock = core.Clock() # Turns on prt timer when the first visit to the planet occurs
         stim = visual.TextStim(win, text="Dig here or travel to a new planet?", color='black', height=0.07, pos=(0, 0.7), wrapWidth=1.5)
         stim.draw()
         win.flip()
-        keys = event.waitKeys(maxWait=2,keyList= ['a','l'],timeStamped = response_clock)
+        keys = event.waitKeys(maxWait=2,keyList= ['a','l'],timeStamped = response_clock) # can only take a or l
         if keys:
-            key,RT = keys[0]
-            if 'a' in key:
-                if decay:
-                    first_planet= False
+            key,RT = keys[0] # RT used for data collection
+            if 'a' in key: # Dig more
+                if decay: # practice trials do not have decay
+                    first_planet= False # Switch first planet off for next trials
                     dig_index +=1
                     study.append({
                         "ID": "",
@@ -295,15 +302,15 @@ def show_animation(images, frame_time=0.667,test=False,gem_img=hundred_img):
                         "Galaxy": "",
                         "DecayRate": "",
                         "AlienIndex": "",
-                        "GemValue": gem,
+                        "GemValue": gem, # Initial gem value set in block_loop
                         "TimeInBlock": ""
                     })
-                    gem = round(decay*gem)
+                    gem = round(decay*gem) # Adds decay to next gem value for following trial
                     gem_path = image_prefix + f"gems/{gem}.jpg"
-                    dig_instruction(gems=gem_path)
+                    dig_instruction(gems=gem_path) # Loops to new trial
                 else:
-                    dig_instruction(gems=gem_img)
-            if 'l' in key:
+                    dig_instruction(gems=gem_img) # This is for practice trials since only shows barrel img
+            if 'l' in key: # If they travel
                     if decay:
                         study.append({
                             "ID": "",
@@ -338,10 +345,9 @@ def show_animation(images, frame_time=0.667,test=False,gem_img=hundred_img):
                             "GemValue": "",
                             "TimeInBlock": ""
                         })
-                    travel_trial()
+                    travel_trial() # Travel animation function
         else:
-            too_slow()
-            # dig_instruction(gems=gem_img)
+            too_slow() # Run out of time
             study.append({
                 "ID": "",
                 "TrialType":f"Too_slow",
@@ -358,14 +364,14 @@ def show_animation(images, frame_time=0.667,test=False,gem_img=hundred_img):
                 "GemValue": gem,
                 "TimeInBlock": ""
             })
-            if decay:
+            if decay: # If there is decay show the next gem value
                 gem = round(decay*gem)
                 gem_path = image_prefix + f"gems/{gem}.jpg"
                 dig_instruction(gems=gem_path)  
-            else:
+            else: # If not just show the barrel again
                 dig_instruction(gems=gem_img)
     else:
-        prt_clock = core.Clock()
+        prt_clock = core.Clock() # Meant to intiialize 
         study.append({
             "ID": "",
             "TrialType":f"Dig_Instruct",
@@ -385,17 +391,19 @@ def show_animation(images, frame_time=0.667,test=False,gem_img=hundred_img):
         win.flip()
         core.wait(1)
 
+# Timeout image for 2 seconds
 def too_slow():
     show_image(timeout_img,duration=2)
 
-
+# Function where show animation is nested -- added for earlier versions but can look into removing
 def dig_instruction(practice=False,gems=hundred_img):
     show_animation(dig_sequence, frame_time=0.667,test=practice,gem_img=gems)
 
+# Rocket travel trials
 def travel_trial():
     """Simulates travel sequence"""
     global study
-    for img in travel_sequence:
+    for img in travel_sequence: # Animates through all images and then waits 1 sec after for 10 sec total
         stim = visual.ImageStim(win, image=img, size=(1.2,1.2))
         stim.draw()
         win.flip()
@@ -419,29 +427,12 @@ def travel_trial():
     })
     win.flip()
 
-
-def decision_trial():
-    """Allows participants to choose whether to dig or travel"""
-    show_image(land_img, 1)
-    response = get_keyboard_response(["a", "l"], timeout=2)
-    if response:
-        key = response[0][0]
-        if key == "a":
-            return "dig"
-        elif key == "l":
-            return "travel"
-    return "timeout"
-
-def practice_trial():
-    """Practice version of the decision trial"""
-    show_text("Practice Trial: Press A to dig or L to travel.")
-    return decision_trial()
-
+# For the practice quiz
 def run_quiz(questions,choices,correct_answers):
     """Displays a multiple-choice quiz and checks answers."""
     global failedNum
     form_items = []
-    win.units = "height"
+    win.units = "height" # Quizzes in psychopy need to have units of height, but this is changed at end of quiz
     for i in range(len(questions)):
         form_items.append(
             {"itemText": questions[i], "type": "radio", "options": choices[i]}
@@ -484,21 +475,22 @@ def run_quiz(questions,choices,correct_answers):
         feedback_text = "Correct! Press SPACE to continue."
     else:
         feedback_text = "Incorrect. Press SPACE to reread the instructions and ry again."
-        failedNum +=1
+        failedNum +=1 # log how many times they fail the quiz
         feedback = visual.TextStim(win, text=feedback_text, color='black', height=0.07)
         feedback.draw()
         win.flip()
-        win.units = "norm"
+        win.units = "norm" # Change units back
         event.waitKeys(keyList=['space'])
-        repeat_inst()
+        repeat_inst() # Repeat initial instructions along with quiz
 
     # Show feedback
-    feedback = visual.TextStim(win, text=feedback_text, color='black', height=0.07)
+    feedback = visual.TextStim(win, text=feedback_text, color='black', height=0.07) # Show correct or incorrect
     feedback.draw()
     win.flip()
-    win.units = "norm"
+    win.units = "norm" # Change units back
     event.waitKeys(keyList=['space'])
-    
+
+# Repeat instructions if they fail the quiz
 def repeat_inst():
     show_text("Howdy! In this experiment, you’ll be an explorer traveling through space to collect space treasure. Your mission is to collect as much treasure as possible. Press the space bar to begin reading the instructions!",image_path=intro_ast,y=0.7,x=0.4)
     show_text("As a space explorer, you’ll visit different planets to dig for space treasure, these pink gems. The more space treasure you mine, the more bonus payment you’ll win! \n\n[Press the space bar to continue]",image_path=intro_gem_img)
@@ -511,6 +503,7 @@ def repeat_inst():
     show_text("After digging and traveling for a while, you’ll be able to take a break at home base.\n\nYou can spend at most 1 minute at home base — there are still a lot of gems left to collect!\n\nYou will spend 30 minutes mining gems and traveling to new planets no matter what.\n\nYou will visit home base every 6 minutes, so, you will visit home base four times during the game.\n\n[Press the space bar to continue]",image_path=home_base,height=0.5,x=1,y=1,text_height=0.04)
     run_quiz(questions=questions,choices=choices,correct_answers=correct_answers)
 
+# 1 minute rest at homebase for breaks
 def rest_homebase():
     """When participants need to rest at homebase"""
     global study,experiment_clock,block_time
@@ -530,23 +523,25 @@ def rest_homebase():
         "DecayRate": "",
         "AlienIndex": "",
         "GemValue": "",
-        "TimeInBlock": block_time
+        "TimeInBlock": block_time # Block time is fixed from block_loop
     })
 
+# Where the main task is run
 def block_loop(blockNum):
     """Main task loop divided into blocks"""
     global gem,decay,alien_index,study,first_planet,block_time
-    first_trial = True
-    timer = core.Clock()
-    while timer.getTime() < block_length: 
+    first_trial = True # Initial switch for first_trial
+    timer = core.Clock() # Timer for each block
+    while timer.getTime() < block_length: # Loop runs for as long as the timer is under block_length
         first_planet = True
-        if alien_index >= len(planets):
+        if alien_index >= len(planets): # If they get through all the aliens it restarts
             alien_index = 0
         if first_trial:
-            get_galaxy(first=True)
+            get_galaxy(first=True) # Get first galaxy type
         else:
-            get_galaxy()
+            get_galaxy() # Get galaxy types with 80/20 distribution
         first_trial = False
+        # Initial decay rate and gem selection
         decay = get_decay_rate(galaxy=galaxy)
         gem = round(np.max([np.min([np.random.normal(100,5),135]),0]))
         gem_path = image_prefix + f"gems/{gem}.jpg"
@@ -566,38 +561,40 @@ def block_loop(blockNum):
             "GemValue": "",
             "TimeInBlock": ""
         })
-        show_image(img_path=planets[alien_index],duration=5)
-        dig_instruction(gems=gem_path)
+        show_image(img_path=planets[alien_index],duration=5) # Show the first alien welcome
+        dig_instruction(gems=gem_path) # And first digging trial done automatically
         alien_index += 1
         
-    block_time = timer.getTime()
+    block_time = timer.getTime() # when timer goes above block_length it logs the time
     win.flip()
     core.wait(1)
 
-
+# How data is saved to CSV
 def save_data(participant_id, trials):
     """Save collected data to a CSV file, automatically detecting headers."""
     folder_name = "data"
-    os.makedirs(folder_name, exist_ok=True) 
+    os.makedirs(folder_name, exist_ok=True)  # Uses data directory and checks if it exists before adding
 
-    filename = os.path.join(folder_name, f"participant_{participant_id}.csv")
+    filename = os.path.join(folder_name, f"participant_{participant_id}.csv") # Data is saved under the id
 
-    if not trials:
+    if not trials: # checks if it is empty
         print("No trial data to save.")
         return 
 
-    headers = trials[0].keys()  
+    headers = trials[0].keys()  # Header is first study keys (should be consistent accross study calls)
 
     with open(filename, "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=headers)
         writer.writeheader()
         
-        for trial in trials:
+        for trial in trials: # Every row is a trial
             writer.writerow(trial) 
 
-    print(f"Data saved to {filename}")
+    print(f"Data saved to {filename}") # Confirmation that data saved
 
-# Experiment flow
+
+
+# Main experiment flow
 
 show_text("Howdy! In this experiment, you’ll be an explorer traveling through space to collect space treasure. Your mission is to collect as much treasure as possible. Press the space bar to begin reading the instructions!",image_path=intro_ast,y=0.7,x=0.4)
 
@@ -647,7 +644,6 @@ block_loop(6)
 save_data(participant_id, study)
 
 show_text("Thank you for participating! Press SPACE to exit.")
-get_keyboard_response(["space"])
 
 win.close()
 core.quit()
