@@ -74,7 +74,7 @@ If installed correctly, this command should return the PsychoPy version.
    ```
 4. **Run the experiment**:  
    ```sh
-   python3 foraging.py
+   python3 foraging.py <participant_id>
    ```
 
 ---
