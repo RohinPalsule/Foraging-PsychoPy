@@ -12,7 +12,7 @@ win = visual.Window(fullscr=True, color='white',allowStencil=True,units = "norm"
 experiment_clock = core.Clock()
 
 # Debug switch along with block times which can be adjusted
-debug = True
+debug = False
 if debug:
     block_length = 30
 else:
