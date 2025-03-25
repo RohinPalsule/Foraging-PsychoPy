@@ -77,7 +77,9 @@ If installed correctly, this command should return the PsychoPy version.
    python3 foraging.py <participant_id>
    ```
 
-If you wish to force exit the PsychoPy terminal on Linux press option + cmd + esc. Otherwise please ensure there is a way to close the experiemnt window when debugging.   
+
+>**Note:** If you wish to force exit the PsychoPy terminal on Linux press option + cmd + esc. Otherwise please ensure there is a way to close the experiment window when debugging such as removing the fullscreen toggle in the code.  
+
 ---
 
 ## Questions  
