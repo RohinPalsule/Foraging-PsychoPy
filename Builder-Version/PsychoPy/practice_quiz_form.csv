@@ -1,0 +1,4 @@
+itemText,type,options,correct
+What affects the amount of bonus money you will earn?,radio,"""The number of planets you visit"",""How long you stay at home base"",""The number of gems you collect""","""The number of gems you collect"""
+The length of this experiment,radio,"""Depends on how many planets you've visited"",""Is fixed"",""Depends on how many gems you've collected""","""Is fixed"""
+You get to stay at home base as long as you like.,radio,"""True"",""False""","""False"""
