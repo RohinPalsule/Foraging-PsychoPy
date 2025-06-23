@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2024.1.3),
-    on Mon Jun 23 12:53:51 2025
+    on Mon Jun 23 13:20:04 2025
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -3606,23 +3606,23 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             # Run 'End Routine' code from code_11
             thisExp.addData('trial_type','too_slow')
             thisExp.nextEntry()
-            
-            study.append({
-                "ID": "",
-                "TrialType":f"Too_slow",
-                "BlockNum": "",
-                "AlienOrder": "",
-                "QuizResp": "",
-                "QuizFailedNum": "",
-                "TimeElapsed": experiment_clock.getTime(),
-                "RT": "NA",
-                "PRT": "",
-                "Galaxy": "",
-                "DecayRate": "",
-                "AlienIndex": "",
-                "GemValue": "",
-                "TimeInBlock": ""
-            })
+            if too_slow_check == True:
+                study.append({
+                    "ID": "",
+                    "TrialType":f"Too_slow",
+                    "BlockNum": "",
+                    "AlienOrder": "",
+                    "QuizResp": "",
+                    "QuizFailedNum": "",
+                    "TimeElapsed": experiment_clock.getTime(),
+                    "RT": "NA",
+                    "PRT": "",
+                    "Galaxy": "",
+                    "DecayRate": "",
+                    "AlienIndex": "",
+                    "GemValue": "",
+                    "TimeInBlock": ""
+                })
             # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
             if routineForceEnded:
                 routineTimer.reset()
@@ -4248,7 +4248,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         
         from psychopy import core
         block_timer = core.Clock()
-        block_duration = 6 * 60  # 6 minutes
+        block_duration = .5 * 60  # 6 minutes
         
         numBlocks +=1
         
@@ -4272,7 +4272,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             "Galaxy": galaxy,
             "DecayRate": decay,
             "AlienIndex": alien_index,
-            "GemValue": "",
+            "GemValue": gem,
             "TimeInBlock": ""
         })
         # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
@@ -4400,10 +4400,10 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             thisExp.addData('alienVisit.stopped', globalClock.getTime(format='float'))
             # Run 'End Routine' code from code_6
             alien_index += 1
-            first_trial = False
+            
             prt_check = True
             if first_trial:
-                galaxy = np.random.randint(0, 3)
+                pass
             else:
                 percentNum = np.random.randint(1, 11)
                 if percentNum > 8:
@@ -4411,11 +4411,28 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                     while newGalaxy == galaxy:
                         newGalaxy = np.random.randint(0, 3)
                     galaxy = newGalaxy
-            print(galaxy)
-            decay = get_decay_rate(galaxy=galaxy)
-            gem = round(np.max([np.min([np.random.normal(100,5),135]),0]))
-            gem_path = f"../images/task_images/gems/{gem}.jpg"
+                decay = get_decay_rate(galaxy=galaxy)
+                gem = round(np.max([np.min([np.random.normal(100,5),135]),0]))
+                study.append({
+                    "ID": "",
+                    "TrialType":f"alien_visit",
+                    "BlockNum": "",
+                    "AlienOrder": "",
+                    "QuizResp": "",
+                    "QuizFailedNum": "",
+                    "TimeElapsed": experiment_clock.getTime(),
+                    "RT": "",
+                    "PRT": "",
+                    "Galaxy": galaxy,
+                    "DecayRate": decay,
+                    "AlienIndex": alien_index,
+                    "GemValue": gem,
+                    "TimeInBlock": ""
+                })
             
+            print(galaxy)
+            gem_path = f"../images/task_images/gems/{gem}.jpg"
+            first_trial = False
             thisExp.addData('gemValue',gem)
             thisExp.addData('decay_rate',decay)
             thisExp.nextEntry()
@@ -5002,23 +5019,23 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 # Run 'End Routine' code from code_11
                 thisExp.addData('trial_type','too_slow')
                 thisExp.nextEntry()
-                
-                study.append({
-                    "ID": "",
-                    "TrialType":f"Too_slow",
-                    "BlockNum": "",
-                    "AlienOrder": "",
-                    "QuizResp": "",
-                    "QuizFailedNum": "",
-                    "TimeElapsed": experiment_clock.getTime(),
-                    "RT": "NA",
-                    "PRT": "",
-                    "Galaxy": "",
-                    "DecayRate": "",
-                    "AlienIndex": "",
-                    "GemValue": "",
-                    "TimeInBlock": ""
-                })
+                if too_slow_check == True:
+                    study.append({
+                        "ID": "",
+                        "TrialType":f"Too_slow",
+                        "BlockNum": "",
+                        "AlienOrder": "",
+                        "QuizResp": "",
+                        "QuizFailedNum": "",
+                        "TimeElapsed": experiment_clock.getTime(),
+                        "RT": "NA",
+                        "PRT": "",
+                        "Galaxy": "",
+                        "DecayRate": "",
+                        "AlienIndex": "",
+                        "GemValue": "",
+                        "TimeInBlock": ""
+                    })
                 # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
                 if routineForceEnded:
                     routineTimer.reset()
