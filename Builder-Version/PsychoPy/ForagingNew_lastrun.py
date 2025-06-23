@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2024.1.3),
-    on Mon Jun 23 12:43:01 2025
+    on Mon Jun 23 12:53:51 2025
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -131,7 +131,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version='',
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='/Users/rohinpalsule/Downloads/ForagingPsychoPy/PsychoPy/ForagingNew_lastrun.py',
+        originPath='/Users/rohinpalsule/Documents/GitHub/Foraging-PsychoPy/Builder-Version/PsychoPy/ForagingNew_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
