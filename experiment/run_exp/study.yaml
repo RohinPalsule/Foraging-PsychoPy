@@ -1,0 +1,42 @@
+debug: false
+block_length_debug: 30
+block_length: 360
+
+image_prefix: "../run_exp/static/images/task_images/"
+params:
+  HRES: 1920
+  VRES: 1080
+  SCREENWIDTH: 88.6
+  IMAGE_SIZE_H: 0.5
+  IMAGE_OFFSET: 0.6
+  BUTTON_1: 'a'
+  BUTTON_2: 'l'
+  BUTTON_QUIT: 'q'
+  BUTTON_NEXTPHASE: 'space'
+  BUTTON_SCANNER: w
+  FONT_SIZE: 0.07
+  TEXTBOX_WIDTH: 1.5
+images:
+  land: "land.jpg"
+  dig: "dig.jpg"
+  space_treasure: "gems/100.jpg"
+  pink_gem: "pink_gem.jpg"
+  opening_img: "opening_img-01.jpg"
+  barrel_text: "barrel_text.jpg"
+  rocket_first: "rocket-01.jpg"
+  alien_intro: "aliens/alien_planet-125.jpg"
+  alien_practice: "aliens/alien_planet-124.jpg"
+  timeout: "time_out.jpg"
+  home_base: "home_base.jpg"
+  gem_value: "gems/100.jpg"
+
+rocket_sequence:
+  - "rocket-01.jpg"
+  - "rocket-02.jpg"
+  - "rocket-03.jpg"
+  - "rocket-04.jpg"
+  - "rocket-05.jpg"
+  - "rocket-06.jpg"
+  - "rocket-07.jpg"
+  - "rocket-08.jpg"
+  - "rocket-09.jpg"

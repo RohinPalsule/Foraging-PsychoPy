@@ -1,45 +1,55 @@
-from psychopy import visual, core, event, data, sound
+from psychopy import visual, core, event, data, sound,monitors
 import random
 import numpy as np
 import csv
 import sys 
 import os
+import yaml
+
+# Load config
+with open("study.yaml", "r") as f:
+    config = yaml.safe_load(f)
+
+
 
 # Initialize the window
+# For scanner
+monitor = monitors.Monitor("expMonitor", width=config['params']['SCREENWIDTH'])
+monitor.setSizePix((config['params']['HRES'], config['params']['VRES']))
+monitor.saveMon()
 
-
+# win = visual.Window([config['params']['HRES'], config['params']['VRES']], allowGUI=True, monitor=monitor, units="norm", color="white", fullscr=True, screen=0)
 win = visual.Window(fullscr=True, color='white',allowStencil=True,units = "norm")
 experiment_clock = core.Clock()
 
-# Debug switch along with block times which can be adjusted
-debug = False
-if debug:
-    block_length = 30
-else:
-    block_length = 360
 
-# Define stimuli images
-image_prefix = "../run_exp/static/images/task_images/"
-land_img = image_prefix + "land.jpg"
-dig_img = image_prefix + "dig.jpg"
-space_treasure_img = image_prefix + "gems/100.jpg"
-example_gem_sequence = [image_prefix + "gems/100.jpg",image_prefix + "gems/84.jpg",image_prefix + "gems/73.jpg",image_prefix + "gems/63.jpg",image_prefix + "gems/41.jpg",image_prefix + "gems/12.jpg"]
-travel_sequence = []
-for i in range(1,10):
-    travel_sequence.append(image_prefix+f"rocket-0{i}.jpg") # For the rocket animation (there is only 9 images but there is a 1 second delay at the end for 10 seconds)
-intro_gem_img = image_prefix + "pink_gem.jpg"
-intro_ast = image_prefix + "opening_img-01.jpg"
-barrel_img = image_prefix + "barrel_text.jpg"
-hundred_img = image_prefix + "gems/100.jpg"
-intro_travel = image_prefix + "rocket-01.jpg"
-intro_alien = image_prefix + "aliens/alien_planet-125.jpg"
-practice_alien = image_prefix + "aliens/alien_planet-124.jpg"
-timeout_img = image_prefix + "time_out.jpg"
-home_base = image_prefix + "home_base.jpg"
-planets = []
-planet_prefix = np.random.choice(np.arange(1,121),120,replace=False) # Randomize order of aliens, but made so they do not repeat
-for planet in planet_prefix:
-    planets.append(image_prefix + f"aliens/alien_planet-{planet}.jpg")
+# Debug and block length
+debug = config.get("debug", False)
+block_length = config["block_length_debug"] if debug else config["block_length"]
+
+# Image prefix
+image_prefix = config["image_prefix"]
+
+# Define individual images
+land_img = image_prefix + config["images"]["land"]
+dig_img = image_prefix + config["images"]["dig"]
+space_treasure_img = image_prefix + config["images"]["space_treasure"]
+intro_gem_img = image_prefix + config["images"]["pink_gem"]
+intro_ast = image_prefix + config["images"]["opening_img"]
+barrel_img = image_prefix + config["images"]["barrel_text"]
+hundred_img = image_prefix + config["images"]["gem_value"]
+intro_travel = image_prefix + config["images"]["rocket_first"]
+intro_alien = image_prefix + config["images"]["alien_intro"]
+practice_alien = image_prefix + config["images"]["alien_practice"]
+timeout_img = image_prefix + config["images"]["timeout"]
+home_base = image_prefix + config["images"]["home_base"]
+
+# Sequences
+travel_sequence = [image_prefix + r for r in config["rocket_sequence"]]
+
+# Randomized planets
+planet_prefix = np.random.choice(np.arange(1,121), 120, replace=False)
+planets = [image_prefix + f"aliens/alien_planet-{planet}.jpg" for planet in planet_prefix]
 gem = 0
 decay = None
 alien_index = 0
@@ -52,6 +62,8 @@ dig_sequence = [image_prefix+"dig.jpg", image_prefix+"land.jpg", image_prefix+"d
 index = 0
 first_planet = True
 
+keyList = [config['params']['BUTTON_1'],config['params']['BUTTON_2']]
+
 if len(sys.argv) < 2: # Call participant ID in terminal
     print("Error: No participant ID provided.")
     print("Usage: python3 experiment.py <participant_id>")
@@ -61,6 +73,22 @@ if len(sys.argv) < 2: # Call participant ID in terminal
 participant_id = sys.argv[1]
 
 study = []
+
+# For study.yaml output
+def study_filename(subject_id_str):
+    extension = ".yaml"
+    if not subject_id_str:
+        return 'study' + extension
+    return 'study' + "." + str(subject_id_str) + extension
+
+def write_study():
+    if not participant_id:
+        raise Exception("Shouldn't write to original study file! Please provide a valid subject ID.")
+    with open(study_filename(participant_id), 'w') as file:
+        for row in study:
+            if isinstance(row.get("AlienOrder"), np.ndarray):
+                row["AlienOrder"] = row["AlienOrder"].tolist()
+        yaml.dump(study, file)
 
 # Initial data format -- What the csv reader takes as column names
 study.append({
@@ -79,7 +107,8 @@ study.append({
     "GemValue": "",
     "TimeInBlock": ""
 })
-
+# init in case exp breaks
+write_study()
 # For practice quiz
 questions = [
     "What affects the amount of bonus money you will earn?",
@@ -132,12 +161,12 @@ def get_galaxy(first=False):
             galaxy = newGalaxy
         
 
-def show_text(text, duration=0, image_path=None,x=0.5,y=0.6,height=0.3,text_height=0.07,home=False):
+def show_text(text, duration=0, image_path=None,x=0.5,y=0.6,height=0.3,text_height=config['params']['FONT_SIZE'],home=False):
     """Displays a text message either until a key is pressed or for a specified duration (Default unlimited duration)"""
     global text_index,study,experiment_clock
     text_index += 1 # Used for trial data descriptions
 
-    stim = visual.TextStim(win, text=text, color='black', height=text_height, pos=(0, height), wrapWidth=1.5) # Adds whatever text is called
+    stim = visual.TextStim(win, text=text, color='black', height=text_height, pos=(0, height), wrapWidth=config['params']['TEXTBOX_WIDTH']) # Adds whatever text is called
     stim.draw() # Pushes it to screen
 
     # If there is an image (specified by image_path) it will show it on the screen
@@ -193,12 +222,12 @@ def show_text(text, duration=0, image_path=None,x=0.5,y=0.6,height=0.3,text_heig
                 })
             
 # Function below is for moving on to real game or continuing practice
-def show_button_text(text,height=0.3,text_height=0.07):
+def show_button_text(text,height=0.3,text_height=config['params']['FONT_SIZE']):
     """Displays a text message either until a button is pressed or for a specified duration (Default unlimited duration)"""
     global text_index,experiment_clock,study
     text_index += 1
     
-    stim = visual.TextStim(win, text=text, color='black', height=text_height, pos=(0, height), wrapWidth=1.5)
+    stim = visual.TextStim(win, text=text, color='black', height=text_height, pos=(0, height), wrapWidth=config['params']['TEXTBOX_WIDTH'])
 
     button1 = visual.Rect(win, width=0.3, height=0.1, pos=(-0.3, -0.1), fillColor='gray')
     button2 = visual.Rect(win, width=0.3, height=0.1, pos=(0.3, -0.1), fillColor='gray')
@@ -275,17 +304,21 @@ def show_animation(images, frame_time=0.667,test=False,gem_img=hundred_img):
         core.wait(frame_time)
     stim = visual.ImageStim(win, image=gem_img, size=(1.2,1.2)) # After animation shows image with gems with img path gem_img
     stim.draw()
+    win.flip()
+    core.wait(1.5)
     if test == False: # Test is for the instruction digging trial, not practice nor main phase
+        stim = visual.ImageStim(win, image=land_img, size=(1.2,1.2)) # After animation shows image with gems with img path gem_img
+        stim.draw()
         response_clock = core.Clock() # for rt data collection
         if first_planet:
             prt_clock = core.Clock() # Turns on prt timer when the first visit to the planet occurs
-        stim = visual.TextStim(win, text="Dig here or travel to a new planet?", color='black', height=0.07, pos=(0, 0.7), wrapWidth=1.5)
+        stim = visual.TextStim(win, text="Dig here or travel to a new planet?", color='black', height=0.07, pos=(0, 0.7), wrapWidth=config['params']['TEXTBOX_WIDTH'])
         stim.draw()
         win.flip()
-        keys = event.waitKeys(maxWait=2,keyList= ['a','l'],timeStamped = response_clock) # can only take a or l
+        keys = event.waitKeys(maxWait=2,keyList= keyList,timeStamped = response_clock) # can only take a or l
         if keys:
             key,RT = keys[0] # RT used for data collection
-            if 'a' in key: # Dig more
+            if keyList[0] in key: # Dig more
                 if decay: # practice trials do not have decay
                     first_planet= False # Switch first planet off for next trials
                     dig_index +=1
@@ -310,7 +343,7 @@ def show_animation(images, frame_time=0.667,test=False,gem_img=hundred_img):
                     dig_instruction(gems=gem_path) # Loops to new trial
                 else:
                     dig_instruction(gems=gem_img) # This is for practice trials since only shows barrel img
-            if 'l' in key: # If they travel
+            if keyList[1] in key: # If they travel
                     if decay:
                         study.append({
                             "ID": "",
@@ -478,7 +511,7 @@ def run_quiz(questions,choices,correct_answers):
         feedback.draw()
         win.flip()
         win.units = "norm" # Change units back
-        event.waitKeys(keyList=['space'])
+        event.waitKeys(keyList=config['params']['BUTTON_NEXTPHASE'])
     else:
         feedback_text = "Incorrect. Press SPACE to reread the instructions and ry again."
         failedNum +=1 # log how many times they fail the quiz
@@ -486,7 +519,7 @@ def run_quiz(questions,choices,correct_answers):
         feedback.draw()
         win.flip()
         win.units = "norm" # Change units back
-        event.waitKeys(keyList=['space'])
+        event.waitKeys(config['params']['BUTTON_3'])
         repeat_inst() # Repeat initial instructions along with quiz
 
 
@@ -567,6 +600,7 @@ def block_loop(blockNum):
         alien_index += 1
         
     block_time = timer.getTime() # when timer goes above block_length it logs the time
+    write_study()
     win.flip()
     core.wait(1)
 
@@ -637,9 +671,6 @@ block_loop(4)
 rest_homebase()
 
 block_loop(5)
-rest_homebase()
-
-block_loop(6)
 
 #Save data
 save_data(participant_id, study)
