@@ -11,6 +11,7 @@ Open the terminal and run:
 ```sh
 brew install python@3.10
 ```
+> For assistance on installing brew, refer to this [guide](https://builtin.com/articles/install-homebrew#:~:text=7%20Steps%20to%20Install%20Homebrew,Verify%20Installation)
 
 ### **Windows Installation**  
 Python **3.10.16** must be installed manually from the [official Python website](https://www.python.org/downloads/release/python-31016/).  
