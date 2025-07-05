@@ -58,6 +58,7 @@ block_time = 0
 text_index = 0
 failedNum = 0
 dig_index = 0
+total_gems = 0
 dig_sequence = [image_prefix+"dig.jpg", image_prefix+"land.jpg", image_prefix+"dig.jpg"]
 index = 0
 first_planet = True
@@ -105,7 +106,8 @@ study.append({
     "DecayRate": "",
     "AlienIndex": "",
     "GemValue": "",
-    "TimeInBlock": ""
+    "TimeInBlock": "",
+    "Bonus":""
 })
 # init in case exp breaks
 write_study()
@@ -198,11 +200,12 @@ def show_text(text, duration=0, image_path=None,x=0.5,y=0.6,height=0.3,text_heig
                 "DecayRate": "",
                 "AlienIndex": "",
                 "GemValue": "",
-                "TimeInBlock": ""
+                "TimeInBlock": "",
+                "Bonus":""
             }) 
         else:
             # Only keys taken in exp (need to change to specify which key to use)
-            event.waitKeys(keyList=["space","a","l"])
+            event.waitKeys(keyList=["space",keyList[0],keyList[1]])
             if home == False:
                 study.append({
                     "ID": "",
@@ -218,7 +221,8 @@ def show_text(text, duration=0, image_path=None,x=0.5,y=0.6,height=0.3,text_heig
                     "DecayRate": "",
                     "AlienIndex": "",
                     "GemValue": "",
-                    "TimeInBlock": ""
+                    "TimeInBlock": "",
+                    "Bonus":""
                 })
             
 # Function below is for moving on to real game or continuing practice
@@ -259,7 +263,8 @@ def show_button_text(text,height=0.3,text_height=config['params']['FONT_SIZE']):
                 "DecayRate": "",
                 "AlienIndex": "",
                 "GemValue": "",
-                "TimeInBlock": ""
+                "TimeInBlock": "",
+                "Bonus":""
             })
             # Show the practice sequence again and then when they travel show this same button text
             dig_instruction(gems=barrel_img)
@@ -280,7 +285,8 @@ def show_button_text(text,height=0.3,text_height=config['params']['FONT_SIZE']):
                 "DecayRate": "",
                 "AlienIndex": "",
                 "GemValue": "",
-                "TimeInBlock": ""
+                "TimeInBlock": "",
+                "Bonus":""
             })
             break # Continue to next function
 
@@ -295,7 +301,7 @@ def show_image(img_path, duration=1.5):
 # Function for digging gems and the subseqent trials
 def show_animation(images, frame_time=0.667,test=False,gem_img=hundred_img):
     """Displays an animation sequence by flipping through images."""
-    global decay,gem,galaxy,study,experiment_clock,dig_index,first_planet,prt_clock
+    global decay,gem,galaxy,study,experiment_clock,dig_index,first_planet,prt_clock,total_gems
 
     for img in images: # Flips through img in images at speed frame_time
         stim = visual.ImageStim(win, image=img, size=(1.2,1.2))
@@ -336,8 +342,10 @@ def show_animation(images, frame_time=0.667,test=False,gem_img=hundred_img):
                         "DecayRate": "",
                         "AlienIndex": "",
                         "GemValue": gem, # Initial gem value set in block_loop
-                        "TimeInBlock": ""
+                        "TimeInBlock": "",
+                        "Bonus":""
                     })
+                    total_gems +=gem
                     gem = round(decay*gem) # Adds decay to next gem value for following trial
                     gem_path = image_prefix + f"gems/{gem}.jpg"
                     dig_instruction(gems=gem_path) # Loops to new trial
@@ -359,7 +367,8 @@ def show_animation(images, frame_time=0.667,test=False,gem_img=hundred_img):
                             "DecayRate": "",
                             "AlienIndex": "",
                             "GemValue": gem,
-                            "TimeInBlock": ""
+                            "TimeInBlock": "",
+                            "Bonus":""
                         })
                     else:
                         study.append({
@@ -376,7 +385,8 @@ def show_animation(images, frame_time=0.667,test=False,gem_img=hundred_img):
                             "DecayRate": "",
                             "AlienIndex": "",
                             "GemValue": "",
-                            "TimeInBlock": ""
+                            "TimeInBlock": "",
+                            "Bonus":""
                         })
                     travel_trial() # Travel animation function
         else:
@@ -395,7 +405,8 @@ def show_animation(images, frame_time=0.667,test=False,gem_img=hundred_img):
                 "DecayRate": "",
                 "AlienIndex": "",
                 "GemValue": gem,
-                "TimeInBlock": ""
+                "TimeInBlock": "",
+                "Bonus":""
             })
             if decay: # If there is decay show the next gem value
                 gem = round(decay*gem)
@@ -419,7 +430,8 @@ def show_animation(images, frame_time=0.667,test=False,gem_img=hundred_img):
             "DecayRate": "",
             "AlienIndex": "",
             "GemValue": "",
-            "TimeInBlock": ""
+            "TimeInBlock": "",
+            "Bonus":""
         })
         win.flip()
         core.wait(1)
@@ -456,7 +468,8 @@ def travel_trial():
         "DecayRate": "",
         "AlienIndex": "",
         "GemValue": "",
-        "TimeInBlock": ""
+        "TimeInBlock": "",
+        "Bonus":""
     })
     win.flip()
 
@@ -501,7 +514,8 @@ def run_quiz(questions,choices,correct_answers):
         "DecayRate": "",
         "AlienIndex": "",
         "GemValue": "",
-        "TimeInBlock": ""
+        "TimeInBlock": "",
+        "Bonus":""
     })
     # Provide feedback based on correctness
     if correct==True:
@@ -557,7 +571,8 @@ def rest_homebase():
         "DecayRate": "",
         "AlienIndex": "",
         "GemValue": "",
-        "TimeInBlock": block_time # Block time is fixed from block_loop
+        "TimeInBlock": block_time, # Block time is fixed from block_loop
+        "Bonus":""
     })
 
 # Where the main task is run
@@ -593,7 +608,8 @@ def block_loop(blockNum):
             "DecayRate": decay,
             "AlienIndex": alien_index,
             "GemValue": "",
-            "TimeInBlock": ""
+            "TimeInBlock": "",
+            "Bonus":""
         })
         show_image(img_path=planets[alien_index],duration=5) # Show the first alien welcome
         dig_instruction(gems=gem_path) # And first digging trial done automatically
@@ -607,6 +623,24 @@ def block_loop(blockNum):
 # How data is saved to CSV
 def save_data(participant_id, trials):
     """Save collected data to a CSV file, automatically detecting headers."""
+    global study,total_gems
+    study.append({
+            "ID": "",
+            "TrialType":"StudyEnd",
+            "BlockNum": "",
+            "AlienOrder": "",
+            "QuizResp": "",
+            "QuizFailedNum": "",
+            "TimeElapsed": experiment_clock.getTime(),
+            "RT": "",
+            "PRT": "",
+            "Galaxy": "",
+            "DecayRate": "",
+            "AlienIndex": "",
+            "GemValue": "",
+            "TimeInBlock": "",
+            "Bonus": np.round(total_gems * 0.0002)
+        })
     folder_name = "data"
     os.makedirs(folder_name, exist_ok=True)  # Uses data directory and checks if it exists before adding
 
@@ -675,7 +709,7 @@ block_loop(5)
 #Save data
 save_data(participant_id, study)
 
-show_text("Thank you for participating! Press SPACE to exit.")
+show_text(f"Thank you for participating! Your bonus money is ${np.round(total_gems * 0.0002)} Please notify your experimenter you have completed the study.")
 
 win.close()
 core.quit()
