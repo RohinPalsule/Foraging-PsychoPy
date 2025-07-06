@@ -639,7 +639,7 @@ def save_data(participant_id, trials):
             "AlienIndex": "",
             "GemValue": "",
             "TimeInBlock": "",
-            "Bonus": np.round(total_gems * 0.0002)
+            "Bonus": int(np.round(total_gems * 0.0002))
         })
     folder_name = "data"
     os.makedirs(folder_name, exist_ok=True)  # Uses data directory and checks if it exists before adding
@@ -709,7 +709,7 @@ block_loop(5)
 #Save data
 save_data(participant_id, study)
 
-show_text(f"Thank you for participating! Your bonus money is ${np.round(total_gems * 0.0002)} Please notify your experimenter you have completed the study.")
+show_text(f"Thank you for participating! Your bonus money is ${int(np.round(total_gems * 0.0002))} Please notify your experimenter you have completed the study.")
 
 win.close()
 core.quit()

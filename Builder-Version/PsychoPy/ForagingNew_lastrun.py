@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2024.1.3),
-    on Mon Jun 23 13:20:04 2025
+    on Sat Jul  5 21:34:47 2025
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -455,6 +455,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     experiment_clock = core.Clock()
     t_loop = 0
     endStudy = False
+    total_gems = 0
+    thank_you_text = ""
     def save_data(participant_id, trials):
         filename = f"data/participant_{participant_id}.csv"
         
@@ -533,7 +535,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         "DecayRate": "",
         "AlienIndex": "",
         "GemValue": "",
-        "TimeInBlock": ""
+        "TimeInBlock": "",
+        "Bonus": ""
     })
     
     # --- Initialize components for Routine "Instruct2" ---
@@ -979,7 +982,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "thank_you" ---
     text_norm_14 = visual.TextStim(win=win, name='text_norm_14',
-        text='Thank you for participating! Press SPACE to exit.',
+        text='',
         font='Arial',
         units='norm', pos=(0, 0), height=0.1, wrapWidth=1.8, ori=0.0, 
         color='black', colorSpace='rgb', opacity=None, 
@@ -2020,6 +2023,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                     timeLoop.finished = True
                     if numBlocks == 5:
                         endStudy = True
+                        thank_you_text = f"Thank you for participating! Your bonus money is ${int(np.round(total_gems * 0.0002))} Please notify your experimenter you have completed the study."
             if t_loop == 1:
                 study.append({
                         "ID": "",
@@ -3771,6 +3775,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                     timeLoop.finished = True
                     if numBlocks == 5:
                         endStudy = True
+                        thank_you_text = f"Thank you for participating! Your bonus money is ${int(np.round(total_gems * 0.0002))} Please notify your experimenter you have completed the study."
             if t_loop == 1:
                 study.append({
                         "ID": "",
@@ -4248,7 +4253,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         
         from psychopy import core
         block_timer = core.Clock()
-        block_duration = .5 * 60  # 6 minutes
+        block_duration = 0.5 * 60  # 6 minutes
         
         numBlocks +=1
         
@@ -4399,7 +4404,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                     thisComponent.setAutoDraw(False)
             thisExp.addData('alienVisit.stopped', globalClock.getTime(format='float'))
             # Run 'End Routine' code from code_6
-            alien_index += 1
+            
             
             prt_check = True
             if first_trial:
@@ -4429,7 +4434,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                     "GemValue": gem,
                     "TimeInBlock": ""
                 })
-            
+            alien_index += 1
             print(galaxy)
             gem_path = f"../images/task_images/gems/{gem}.jpg"
             first_trial = False
@@ -4837,9 +4842,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                         theseKeys = digChoices_2.getKeys(keyList=['a','l'], ignoreKeys=["escape"], waitRelease=False)
                         _digChoices_2_allKeys.extend(theseKeys)
                         if len(_digChoices_2_allKeys):
-                            digChoices_2.keys = _digChoices_2_allKeys[0].name  # just the first key pressed
-                            digChoices_2.rt = _digChoices_2_allKeys[0].rt
-                            digChoices_2.duration = _digChoices_2_allKeys[0].duration
+                            digChoices_2.keys = _digChoices_2_allKeys[-1].name  # just the last key pressed
+                            digChoices_2.rt = _digChoices_2_allKeys[-1].rt
+                            digChoices_2.duration = _digChoices_2_allKeys[-1].duration
                             # a response ends the routine
                             continueRoutine = False
                     
@@ -4877,6 +4882,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                     digloop_main.addData('digChoices_2.rt', digChoices_2.rt)
                     digloop_main.addData('digChoices_2.duration', digChoices_2.duration)
                 # Run 'End Routine' code from code_8
+                total_gems +=1
                 gem = round(decay*gem) # Adds decay to next gem value for following trial
                 image_prefix = '../images/task_images/'
                 gem_path = image_prefix + f"gems/{gem}.jpg"
@@ -5184,6 +5190,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                         timeLoop.finished = True
                         if numBlocks == 5:
                             endStudy = True
+                            thank_you_text = f"Thank you for participating! Your bonus money is ${int(np.round(total_gems * 0.0002))} Please notify your experimenter you have completed the study."
                 if t_loop == 1:
                     study.append({
                             "ID": "",
@@ -5552,6 +5559,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     continueRoutine = True
     # update component parameters for each repeat
     thisExp.addData('thank_you.started', globalClock.getTime(format='float'))
+    text_norm_14.setText(thank_you_text)
     key_instruct_9.keys = []
     key_instruct_9.rt = []
     _key_instruct_9_allKeys = []
@@ -5661,7 +5669,23 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # Run 'End Routine' code from text_align_10
     thisExp.addData("trial_type","thank_you")
     thisExp.nextEntry()
-    
+    study.append({
+            "ID": "",
+            "TrialType":f"EndStudy",
+            "BlockNum": "",
+            "AlienOrder": "",
+            "QuizResp": "",
+            "QuizFailedNum": "",
+            "TimeElapsed": experiment_clock.getTime(),
+            "RT": "",
+            "PRT": "",
+            "Galaxy":"",
+            "DecayRate": "",
+            "AlienIndex": "",
+            "GemValue": "",
+            "TimeInBlock": "",
+            "Bonus": int(np.round(total_gems * 0.0002))
+        })
     save_data(expInfo['participant'], study)
     thisExp.nextEntry()
     # the Routine "thank_you" was not non-slip safe, so reset the non-slip timer
