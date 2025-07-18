@@ -1,0 +1,7133 @@
+- AlienIndex: ''
+  AlienOrder:
+  - 56
+  - 101
+  - 48
+  - 82
+  - 65
+  - 26
+  - 116
+  - 76
+  - 61
+  - 2
+  - 83
+  - 16
+  - 98
+  - 67
+  - 111
+  - 62
+  - 77
+  - 115
+  - 70
+  - 52
+  - 15
+  - 72
+  - 79
+  - 85
+  - 34
+  - 9
+  - 7
+  - 108
+  - 71
+  - 84
+  - 40
+  - 47
+  - 104
+  - 27
+  - 80
+  - 86
+  - 66
+  - 10
+  - 36
+  - 53
+  - 28
+  - 3
+  - 74
+  - 46
+  - 38
+  - 120
+  - 63
+  - 14
+  - 90
+  - 78
+  - 24
+  - 5
+  - 49
+  - 25
+  - 97
+  - 42
+  - 102
+  - 35
+  - 39
+  - 6
+  - 13
+  - 75
+  - 41
+  - 4
+  - 21
+  - 103
+  - 105
+  - 81
+  - 55
+  - 113
+  - 69
+  - 32
+  - 107
+  - 44
+  - 57
+  - 99
+  - 64
+  - 29
+  - 60
+  - 20
+  - 1
+  - 11
+  - 89
+  - 51
+  - 43
+  - 117
+  - 8
+  - 58
+  - 87
+  - 106
+  - 96
+  - 45
+  - 73
+  - 30
+  - 112
+  - 118
+  - 94
+  - 12
+  - 19
+  - 109
+  - 22
+  - 18
+  - 95
+  - 54
+  - 59
+  - 68
+  - 33
+  - 100
+  - 31
+  - 93
+  - 50
+  - 119
+  - 17
+  - 23
+  - 91
+  - 114
+  - 92
+  - 37
+  - 110
+  - 88
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: '2035'
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.001343958333336559
+    state:
+      format: &id001 !!python/name:builtins.float ''
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: InitializeStudy
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 24.45810295833337
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Instruction_1
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 28.223643041666662
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Instruction_2
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 32.08345491666665
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Instruction_3
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 36.113071916666684
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Instruct
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 44.08703616666668
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Instruction_4
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 54.20819383333338
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 57.520464583333364
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Instruction_5
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 62.79623683333335
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Instruction_6
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 71.14424824999998
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Instruction_7
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: 0
+  QuizResp:
+  - The number of gems you collect
+  - Is fixed
+  - 'False'
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 92.09652654166666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: practice_quiz
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 95.11831370833335
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Instruction_8
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.38936687500000744
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 129.08464858333338
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Practice_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 139.19033829166665
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 143.91818720833334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Instruction_9
+- AlienIndex: 0
+  AlienOrder: ''
+  BlockNum: 1
+  Bonus: ''
+  DecayRate: 0.20045335125089941
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 143.92043954166667
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 109
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.6941340833333243
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 153.77653045833335
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_1
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 22
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.4932596666666882
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 158.28642770833335
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_2
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 4
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.5558816249999836
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 162.83282391666665
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_3
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 1
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 14.023804416666678
+    state:
+      format: *id001
+      lastReset: 1752783992.6319401
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.27640220833330886
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 167.10607358333334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 177.213270125
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 1
+  AlienOrder: ''
+  BlockNum: 1
+  Bonus: ''
+  DecayRate: 0.24007585000656487
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 177.21534845833338
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 94
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.32641554166667675
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 186.65207641666666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_4
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 23
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.2473497916666929
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 190.90003058333338
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_5
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 6
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.23856837499999983
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 195.14959775
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_6
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 1
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 12.931845708333356
+    state:
+      format: *id001
+      lastReset: 1752784025.87552
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.11267370833331825
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 199.257376125
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 209.38047979166663
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 2
+  AlienOrder: ''
+  BlockNum: 1
+  Bonus: ''
+  DecayRate: 0.19134580651704208
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 209.38268304166672
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 99
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.05259395833331837
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 218.5379261666667
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_7
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 19
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 4.112438958333314
+    state:
+      format: *id001
+      lastReset: 1752784058.035499
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.06065399999999954
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 222.59763916666668
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 232.716596375
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 3
+  AlienOrder: ''
+  BlockNum: 1
+  Bonus: ''
+  DecayRate: 0.22121655554548741
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 232.71919445833328
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 99
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.20209162499998
+    state:
+      format: *id001
+      lastReset: 1752784081.368811
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.20195954166672436
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 242.02038016666665
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 252.11368879166662
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 4
+  AlienOrder: ''
+  BlockNum: 1
+  Bonus: ''
+  DecayRate: 0.11672689650396265
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 252.11577187499995
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 104
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.2615833749999865
+    state:
+      format: *id001
+      lastReset: 1752784100.815451
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.2614475416665982
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 261.5263262916666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 271.6235037916666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 5
+  AlienOrder: ''
+  BlockNum: 1
+  Bonus: ''
+  DecayRate: 0.20826173949908494
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 271.62601525
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 96
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.23845620833333214
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 280.96014987499996
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_8
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 20
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 4.35904458333323
+    state:
+      format: *id001
+      lastReset: 1752784120.272459
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.12591604166664183
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 285.08060766666665
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 295.17951874999994
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 6
+  AlienOrder: ''
+  BlockNum: 1
+  Bonus: ''
+  DecayRate: 0.1973723496893175
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 295.18208391666667
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 103
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.2163615416667426
+    state:
+      format: *id001
+      lastReset: 1752784143.844088
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.216221541666755
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 304.50932808333334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 314.6280285416666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 7
+  AlienOrder: ''
+  BlockNum: 1
+  Bonus: ''
+  DecayRate: 0.5008591792654069
+  Galaxy: 1
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 314.63009724999995
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 102
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1.2566500833333976
+    state:
+      format: *id001
+      lastReset: 1752784163.281203
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 1.256571000000008
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 324.98654524999995
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 335.09404058333337
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 8
+  AlienOrder: ''
+  BlockNum: 1
+  Bonus: ''
+  DecayRate: 0.5361900481508909
+  Galaxy: 1
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 335.09612574999994
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 93
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.1651590833332648
+    state:
+      format: *id001
+      lastReset: 1752784183.7421079
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.16503108333347427
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 344.3557622083333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 354.4512304583334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 9
+  AlienOrder: ''
+  BlockNum: 1
+  Bonus: ''
+  DecayRate: 0.47773854652441805
+  Galaxy: 1
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 354.4533255
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 95
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.48842612500004634
+    state:
+      format: *id001
+      lastReset: 1752784203.163111
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.48828966666667384
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 364.0998465
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 374.1959295833334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 10
+  AlienOrder: ''
+  BlockNum: 1
+  Bonus: ''
+  DecayRate: 0.4966823773387967
+  Galaxy: 1
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 374.1980885833334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 105
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.22711575000005269
+    state:
+      format: *id001
+      lastReset: 1752784222.85158
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.22698866666655704
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 383.52681554166656
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 393.6350979583334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 11
+  AlienOrder: ''
+  BlockNum: 1
+  Bonus: ''
+  DecayRate: 0.4661417202468989
+  Galaxy: 1
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 393.6371406666666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 105
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.3505327916666374
+    state:
+      format: *id001
+      lastReset: 1752784242.289731
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.3504051666666328
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 403.08819679166663
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 413.2017626666666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 12
+  AlienOrder: ''
+  BlockNum: 1
+  Bonus: ''
+  DecayRate: 0.5738301802207901
+  Galaxy: 1
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 413.203868125
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 99
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: NA
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 426.4305773333334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Too_slow
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 57
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: NA
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 434.55534329166665
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Too_slow
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 33
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.017280333333246745
+    state:
+      format: *id001
+      lastReset: 1752784278.1221828
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.01716479166668705
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 438.5870533333334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 448.69005125
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 13
+  AlienOrder: ''
+  BlockNum: 1
+  Bonus: ''
+  DecayRate: 0.4768689987007379
+  Galaxy: 1
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 448.69239854166665
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 101
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.21821470833333478
+    state:
+      format: *id001
+      lastReset: 1752784297.360291
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.2180828749999364
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 458.02591058333337
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 468.14457716666664
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 14
+  AlienOrder: ''
+  BlockNum: 1
+  Bonus: ''
+  DecayRate: 0.9029039064502652
+  Galaxy: 2
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 468.1466197916666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 100
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.5199075416668393
+    state:
+      format: *id001
+      lastReset: 1752784316.803175
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.5197837083334207
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 477.77030066666657
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 487.8684211666666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 15
+  AlienOrder: ''
+  BlockNum: 1
+  Bonus: ''
+  DecayRate: 0.845859883423244
+  Galaxy: 2
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 487.87113004166656
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 99
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1.379485708333391
+    state:
+      format: *id001
+      lastReset: 1752784336.5522518
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 1.379359291666674
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 498.37876679166664
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 508.48921237499997
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 518.106852375
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: too_slow
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 518.1068769999999
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 364.57275495833335
+    state:
+      format: *id001
+      lastReset: 1752783983.468056
+  TrialType: home_base
+- AlienIndex: 16
+  AlienOrder: ''
+  BlockNum: 2
+  Bonus: ''
+  DecayRate: 0.15076273957198716
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 518.1069174583333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 101
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.25682308333330184
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 527.4882122083334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_9
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 15
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 4.422052958333325
+    state:
+      format: *id001
+      lastReset: 1752784366.784524
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.15893787499999235
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 531.6533153333334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 541.7804987083333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 17
+  AlienOrder: ''
+  BlockNum: 2
+  Bonus: ''
+  DecayRate: 0.2630867711913325
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 541.7828270833334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 97
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.43143850000001294
+    state:
+      format: *id001
+      lastReset: 1752784390.447377
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.4313113749999502
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 551.325326625
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 561.4232995833333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 18
+  AlienOrder: ''
+  BlockNum: 2
+  Bonus: ''
+  DecayRate: 0.20425005220224687
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 561.42535775
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 95
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.3321455000000242
+    state:
+      format: *id001
+      lastReset: 1752784410.094404
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.3320077916664559
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 570.8728726666666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 580.9766760416666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 19
+  AlienOrder: ''
+  BlockNum: 2
+  Bonus: ''
+  DecayRate: 0.11270770045401686
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 580.978768375
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 95
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.2253488333334417
+    state:
+      format: *id001
+      lastReset: 1752784429.634921
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.225212166666779
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 590.3064053749999
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 600.4183591666666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 20
+  AlienOrder: ''
+  BlockNum: 2
+  Bonus: ''
+  DecayRate: 0.22796068793175553
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 600.42072175
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 93
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.36755249999998796
+    state:
+      format: *id001
+      lastReset: 1752784449.072775
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.36742820833342194
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 609.8862759583334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 619.9799815
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 21
+  AlienOrder: ''
+  BlockNum: 2
+  Bonus: ''
+  DecayRate: 0.24708865404909847
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 619.9821871666666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 91
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.2315385833334176
+    state:
+      format: *id001
+      lastReset: 1752784468.668716
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.2314042083332879
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 629.346015375
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 639.4449222916667
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 22
+  AlienOrder: ''
+  BlockNum: 2
+  Bonus: ''
+  DecayRate: 0.20109467588772997
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 639.447131625
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 98
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1.0920692916665757
+    state:
+      format: *id001
+      lastReset: 1752784488.1023018
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 1.0919352083333251
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 649.6399455833333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 659.749180125
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 23
+  AlienOrder: ''
+  BlockNum: 2
+  Bonus: ''
+  DecayRate: 0.23850584937289815
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 659.7512206666667
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 100
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1.3095593749999352
+    state:
+      format: *id001
+      lastReset: 1752784508.403002
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 1.3094271666668647
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 670.1579410833334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 680.253942625
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 24
+  AlienOrder: ''
+  BlockNum: 2
+  Bonus: ''
+  DecayRate: 0.1571640562455057
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 680.256064125
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 101
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.15588704166657408
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 689.5379367083334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_10
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 16
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 4.344151541666633
+    state:
+      format: *id001
+      lastReset: 1752784528.936748
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.20203754166664112
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 693.7260817916666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 703.8325106666666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 25
+  AlienOrder: ''
+  BlockNum: 2
+  Bonus: ''
+  DecayRate: 0.837536921759734
+  Galaxy: 2
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 703.8346065833333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 105
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: NA
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 717.0570940416666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Too_slow
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 88
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: NA
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 725.175879125
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Too_slow
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 74
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.12663745833356188
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 729.3110614583333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_11
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 62
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.30534112500004085
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 733.6069786666666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_12
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 52
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.239461666666557
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 737.86254275
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_13
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 44
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 12.714842708333435
+    state:
+      format: *id001
+      lastReset: 1752784568.739498
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.05243787499989594
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 741.8991406666665
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 752.0186935
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 26
+  AlienOrder: ''
+  BlockNum: 2
+  Bonus: ''
+  DecayRate: 0.8453847598139008
+  Galaxy: 2
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 752.0208597916666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 97
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 1.4428380833332994
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 762.5778411666666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_14
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 82
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.33324341666661894
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 766.9174459166667
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_15
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 69
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.1941950000000361
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 771.1300658333333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_16
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 58
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 14.09321887499982
+    state:
+      format: *id001
+      lastReset: 1752784600.690384
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.10892824999996265
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 775.2280966249999
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 785.3483195
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 27
+  AlienOrder: ''
+  BlockNum: 2
+  Bonus: ''
+  DecayRate: 0.834481753547484
+  Galaxy: 2
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 785.3504766249999
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 101
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.13538083333332906
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 794.5932917083331
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_17
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 84
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.6069219999999405
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 799.1996508333333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_18
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 70
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 8.91948712500016
+    state:
+      format: *id001
+      lastReset: 1752784634.013626
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.16702179166645692
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 803.3772868333334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 813.4774895833333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 28
+  AlienOrder: ''
+  BlockNum: 2
+  Bonus: ''
+  DecayRate: 0.8507153043565808
+  Galaxy: 2
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 813.4796737916666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 103
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.1272166250000737
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 822.7122906666667
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_19
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 88
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: NA
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 830.8539391249998
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Too_slow
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 75
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 13.58357995833353
+    state:
+      format: *id001
+      lastReset: 1752784662.1410408
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 1.3306437500000357
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 836.1685246249998
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 846.2712388333333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 29
+  AlienOrder: ''
+  BlockNum: 2
+  Bonus: ''
+  DecayRate: 0.7387426930788434
+  Galaxy: 2
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 846.273809125
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 95
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.11547891666668875
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 855.5042953333333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_20
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 70
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 4.245537833333401
+    state:
+      format: *id001
+      lastReset: 1752784694.9450922
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.14192804166646056
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 859.6342192083333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 869.7332173333333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 30
+  AlienOrder: ''
+  BlockNum: 2
+  Bonus: ''
+  DecayRate: 0.8138339022551737
+  Galaxy: 2
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 869.7352747499998
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 103
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.3233515833333058
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 879.1704552083335
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_21
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 84
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 4.5274824999999055
+    state:
+      format: *id001
+      lastReset: 1752784718.4036
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.21836979166664605
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 883.37444675
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 893.4710651249999
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 901.1046605833334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: too_slow
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 901.1046732916667
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 375.3662775416668
+    state:
+      format: *id001
+      lastReset: 1752784357.660053
+  TrialType: home_base
+- AlienIndex: 31
+  AlienOrder: ''
+  BlockNum: 3
+  Bonus: ''
+  DecayRate: 0.7779160538614875
+  Galaxy: 2
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 901.1047080833333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 106
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.8127563333332546
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 911.0217144583333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_22
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 82
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.24547879166675557
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 915.3182294166667
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_23
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 64
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 9.385603500000116
+    state:
+      format: *id001
+      lastReset: 1752784749.765766
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.28804058333321336
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 919.5944324583335
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 929.7075214999999
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 32
+  AlienOrder: ''
+  BlockNum: 3
+  Bonus: ''
+  DecayRate: 0.8546803635914549
+  Galaxy: 2
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 929.7099817499999
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 104
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.10438025000007656
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 938.9169168333334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_24
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 89
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.10402004166667211
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 943.0219430833334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_25
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 76
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.01675999999997657
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 947.0260730833335
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_26
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 65
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.4880379166665989
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 951.5065580416666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_27
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 56
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.3482168333334812
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 955.8424925833334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_28
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 48
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.23928783333349202
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 960.0726500416666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_29
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 41
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.07997741666667935
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 964.1564303333333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_30
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 35
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.14192091666632223
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 968.2844473333333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_31
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 30
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.2603561250000439
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 972.5559480416665
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_32
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 26
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.6114197500000955
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 977.1498284166665
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_33
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 22
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.12988799999993716
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 981.2906158333334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_34
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 19
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.19232274999990295
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 985.4684203333333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_35
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 16
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.06449245833323403
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 989.5391986666667
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_36
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 14
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 1.167258499999889
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 994.6920911249998
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_37
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 12
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.5060831250000319
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 999.1911178749998
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_38
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 10
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 1.3881096250001974
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1004.5588981666666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_39
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 9
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 1.036559791666832
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1009.5888236666666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_40
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 8
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.5102685416666191
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1014.0787737083334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_41
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 7
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.5349135833334913
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1018.6026025416667
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_42
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 6
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.05907495833344001
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1022.6421235416666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_43
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 5
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.1700063749999572
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1026.80025975
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_44
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 4
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.3852634999998372
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1031.1668712916667
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_45
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 3
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.0569156250001015
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1035.2172239583333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_46
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 3
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.8068411666667998
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1040.0022205833334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_47
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 3
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.10947954166681484
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1044.1045477083335
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_48
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 3
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.04909408333355714
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1048.1334299166665
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_49
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 3
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.05697995833361347
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1052.1854699166665
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_50
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 3
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.07879116666663322
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1056.2509805833333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_51
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 3
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.15276254166678882
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1060.3974044166666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_52
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 3
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 125.7509507499999
+    state:
+      format: *id001
+      lastReset: 1752784778.369631
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.1781958333331204
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1064.5633704583333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1074.6736449583332
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 33
+  AlienOrder: ''
+  BlockNum: 3
+  Bonus: ''
+  DecayRate: 0.7811380679993145
+  Galaxy: 2
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1074.6763032083331
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 88
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.20047395833330484
+    state:
+      format: *id001
+      lastReset: 1752784923.345685
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.2003719166668816
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1083.9875564999998
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1094.0820075416668
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 34
+  AlienOrder: ''
+  BlockNum: 3
+  Bonus: ''
+  DecayRate: 0.9016964658995208
+  Galaxy: 2
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1094.084164375
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 98
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.2266541666667763
+    state:
+      format: *id001
+      lastReset: 1752784942.80718
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.2265306666665765
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1103.475044375
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1113.5870003333334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 35
+  AlienOrder: ''
+  BlockNum: 3
+  Bonus: ''
+  DecayRate: 0.7370253257019749
+  Galaxy: 2
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1113.5891551666668
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 109
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.5945989166668824
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1123.2933391249999
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_53
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 80
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: NA
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1131.4212190833332
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Too_slow
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 59
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 12.74515070833354
+    state:
+      format: *id001
+      lastReset: 1752784962.257586
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.01863833333322873
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1135.4437600416668
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1145.5730704583334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 36
+  AlienOrder: ''
+  BlockNum: 3
+  Bonus: ''
+  DecayRate: 0.2122134637906934
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1145.5753920833336
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 99
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.04124545833337834
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1154.7269682083333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_54
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 21
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 4.097007000000076
+    state:
+      format: *id001
+      lastReset: 1752784994.244879
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.06151937499998894
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1158.7826024583333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1168.9065352916668
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 37
+  AlienOrder: ''
+  BlockNum: 3
+  Bonus: ''
+  DecayRate: 0.11873259400367656
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1168.9086824166666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 105
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.8848624166666923
+    state:
+      format: *id001
+      lastReset: 1752785017.568701
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.8847360416666561
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1178.8940564999998
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1188.9889981249999
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 38
+  AlienOrder: ''
+  BlockNum: 3
+  Bonus: ''
+  DecayRate: 0.1647228694660511
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1188.9912722499998
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 99
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.22999020833321993
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1198.3519852083332
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_55
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 16
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 4.298550166666473
+    state:
+      format: *id001
+      lastReset: 1752785037.6815581
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.08038749999991524
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1202.4204074166664
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1212.5339594166667
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 39
+  AlienOrder: ''
+  BlockNum: 3
+  Bonus: ''
+  DecayRate: 0.24441692470803963
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1212.5363304583334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 104
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.2708927083333492
+    state:
+      format: *id001
+      lastReset: 1752785061.199548
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.27077045833311786
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1221.91051475
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1232.0055777916668
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 40
+  AlienOrder: ''
+  BlockNum: 3
+  Bonus: ''
+  DecayRate: 0.2742225299068247
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1232.0076260416668
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 94
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.2655296666664526
+    state:
+      format: *id001
+      lastReset: 1752785080.697245
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.2653969583334401
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1241.4026613749998
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1251.5003582499999
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 41
+  AlienOrder: ''
+  BlockNum: 3
+  Bonus: ''
+  DecayRate: 0.19248853490082476
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1251.5025316666665
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 108
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.48103775000004134
+    state:
+      format: *id001
+      lastReset: 1752785100.158924
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.4808997916666158
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1261.0796612499998
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1271.1760307916666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1277.1620173333336
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: too_slow
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1277.1620292083335
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 370.07338875000005
+    state:
+      format: *id001
+      lastReset: 1752784740.661525
+  TrialType: home_base
+- AlienIndex: 42
+  AlienOrder: ''
+  BlockNum: 4
+  Bonus: ''
+  DecayRate: 0.7818040709170879
+  Galaxy: 2
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1277.1620624166667
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 106
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.026241791666507197
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1286.3017566666667
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_56
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 83
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 4.17311979166675
+    state:
+      format: *id001
+      lastReset: 1752785125.8359292
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.13813133333360383
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1290.4485029583334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1300.5530078749998
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 43
+  AlienOrder: ''
+  BlockNum: 4
+  Bonus: ''
+  DecayRate: 0.4819618092113649
+  Galaxy: 1
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1300.5550966666665
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 103
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.1972742500001914
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1309.852246125
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_57
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 50
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 4.2431527083331275
+    state:
+      format: *id001
+      lastReset: 1752785149.215636
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.03625058333341258
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1313.8980174166668
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1324.0025929166668
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 44
+  AlienOrder: ''
+  BlockNum: 4
+  Bonus: ''
+  DecayRate: 0.5071986533055562
+  Galaxy: 1
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1324.0048461666665
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 98
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.480573374999949
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1333.5871265833334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_58
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 50
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 4.65857379166664
+    state:
+      format: *id001
+      lastReset: 1752785172.6674528
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.17198408333320003
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1337.7650315416668
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1347.8684573749997
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 45
+  AlienOrder: ''
+  BlockNum: 4
+  Bonus: ''
+  DecayRate: 0.531308373077633
+  Galaxy: 1
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1347.870537625
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 109
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.2444801249998818
+    state:
+      format: *id001
+      lastReset: 1752785196.5341399
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.24437987500004965
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1357.217396
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1367.3337747083333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 46
+  AlienOrder: ''
+  BlockNum: 4
+  Bonus: ''
+  DecayRate: 0.4809363692651946
+  Galaxy: 1
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1367.3358741666666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 101
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.3548534583333094
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1376.788920375
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_59
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 49
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 4.442700249999916
+    state:
+      format: *id001
+      lastReset: 1752785215.995351
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.09254099999998289
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1380.8766391249997
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1390.9756467499997
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 47
+  AlienOrder: ''
+  BlockNum: 4
+  Bonus: ''
+  DecayRate: 0.7941408528339812
+  Galaxy: 2
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1390.9777717916668
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 106
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 1.2408481666666376
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1401.3156757916668
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_60
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 84
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 7.0266120416667945
+    state:
+      format: *id001
+      lastReset: 1752785239.636336
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 1.791183541666669
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1407.101308875
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1417.2004443749997
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 48
+  AlienOrder: ''
+  BlockNum: 4
+  Bonus: ''
+  DecayRate: 0.8318911885852753
+  Galaxy: 2
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1417.2027972083333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 102
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.05243854166656092
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1426.3550746249998
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_61
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 85
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 4.308499958333414
+    state:
+      format: *id001
+      lastReset: 1752785265.86439
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.2604022499999701
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1430.6109994583335
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1440.7116348333334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 49
+  AlienOrder: ''
+  BlockNum: 4
+  Bonus: ''
+  DecayRate: 0.7908900247554106
+  Galaxy: 2
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1440.7140413749999
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 102
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.6790563333336195
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1450.4936410416667
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_62
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 81
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 5.351842583333564
+    state:
+      format: *id001
+      lastReset: 1752785289.376569
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.6762572083332543
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1455.1662954999997
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1465.2638044999999
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 50
+  AlienOrder: ''
+  BlockNum: 4
+  Bonus: ''
+  DecayRate: 0.8195688146734835
+  Galaxy: 2
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1465.2657938333332
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 96
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: NA
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1478.4948837083334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Too_slow
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 79
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.43766283333320644
+    state:
+      format: *id001
+      lastReset: 1752785322.050373
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.43751895833315757
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1482.9256065
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1493.0195583333334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 51
+  AlienOrder: ''
+  BlockNum: 4
+  Bonus: ''
+  DecayRate: 0.8300577074000505
+  Galaxy: 2
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1493.0216697083333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 91
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.45417295833340177
+    state:
+      format: *id001
+      lastReset: 1752785341.7568011
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.4540399166667157
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1502.6483554583333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1512.7430424999998
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 52
+  AlienOrder: ''
+  BlockNum: 4
+  Bonus: ''
+  DecayRate: 0.8579443645714697
+  Galaxy: 2
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1512.74507925
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 102
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: NA
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1525.9890082499996
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Too_slow
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 88
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.8059455833333686
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1530.7832675
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_63
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 75
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 4.894311666666681
+    state:
+      format: *id001
+      lastReset: 1752785369.540073
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.07108395833324721
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1534.8714992916666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1544.9639209166667
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 53
+  AlienOrder: ''
+  BlockNum: 4
+  Bonus: ''
+  DecayRate: 0.8102550920114567
+  Galaxy: 2
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1544.9659093333335
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 100
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.291952208333214
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1554.3566247916665
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_64
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 81
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.3149503750000804
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1558.6681925833332
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_65
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 66
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 8.636931999999888
+    state:
+      format: *id001
+      lastReset: 1752785393.627661
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.04682999999999993
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1562.7014765
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1572.7937241249997
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 54
+  AlienOrder: ''
+  BlockNum: 4
+  Bonus: ''
+  DecayRate: 0.850313735596232
+  Galaxy: 2
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1572.796265375
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 105
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.279395708333368
+    state:
+      format: *id001
+      lastReset: 1752785421.4696388
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.2792632916664388
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1582.1856503333333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1592.2815888749997
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 55
+  AlienOrder: ''
+  BlockNum: 4
+  Bonus: ''
+  DecayRate: 0.48836000025044385
+  Galaxy: 1
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1592.2836547916668
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 98
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.2008744999998271
+    state:
+      format: *id001
+      lastReset: 1752785440.934283
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.20077995833321438
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1601.5865022499997
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1611.7075119583333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 56
+  AlienOrder: ''
+  BlockNum: 4
+  Bonus: ''
+  DecayRate: 0.5821775938063606
+  Galaxy: 1
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1611.7095508333332
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 106
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.2631774999999834
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1621.0802101666668
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_66
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 62
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 4.459884583333178
+    state:
+      format: *id001
+      lastReset: 1752785460.360577
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.2012877083332114
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1625.2767877916667
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1635.3760868333334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 57
+  AlienOrder: ''
+  BlockNum: 4
+  Bonus: ''
+  DecayRate: 0.48705704411518785
+  Galaxy: 1
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1635.3785979583336
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 98
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: NA
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1648.60517875
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Too_slow
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 48
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.25823970833334897
+    state:
+      format: *id001
+      lastReset: 1752785492.144037
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.2581047916667103
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1652.8602808333335
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1662.9627680833332
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1666.5448157916667
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: too_slow
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1666.5448274166665
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 385.80279920833345
+    state:
+      format: *id001
+      lastReset: 1752785116.722489
+  TrialType: home_base
+- AlienIndex: 58
+  AlienOrder: ''
+  BlockNum: 5
+  Bonus: ''
+  DecayRate: 0.516290034082165
+  Galaxy: 1
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1666.544859875
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 104
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.2835905833335346
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1675.9350090416665
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_67
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 54
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 4.76082629166649
+    state:
+      format: *id001
+      lastReset: 1752785515.19314
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.47219220833335385
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1680.4121209583332
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1690.5196861249997
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 59
+  AlienOrder: ''
+  BlockNum: 5
+  Bonus: ''
+  DecayRate: 0.5124063726615024
+  Galaxy: 1
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1690.5218082083334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 102
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.10835587499991561
+    state:
+      format: *id001
+      lastReset: 1752785539.1574988
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.10824858333330667
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1699.7240031249999
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1709.8369712083336
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 60
+  AlienOrder: ''
+  BlockNum: 5
+  Bonus: ''
+  DecayRate: 0.5441501275761631
+  Galaxy: 1
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1709.8391085833332
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 102
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.07787162499994338
+    state:
+      format: *id001
+      lastReset: 1752785558.481817
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.07773704166652351
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1719.0178040833334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1729.1112502083333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 61
+  AlienOrder: ''
+  BlockNum: 5
+  Bonus: ''
+  DecayRate: 0.4753940753657496
+  Galaxy: 1
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1729.1133995
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 88
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 1.4682439166665517
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1739.7100838749998
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_68
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 42
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 5.760395874999858
+    state:
+      format: *id001
+      lastReset: 1752785577.7836502
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.3051614166665786
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1744.00212225
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1754.1151962083336
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 62
+  AlienOrder: ''
+  BlockNum: 5
+  Bonus: ''
+  DecayRate: 0.5312660981541114
+  Galaxy: 1
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1754.1174989166666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 100
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.26697858333318436
+    state:
+      format: *id001
+      lastReset: 1752785602.757235
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.26688070833324673
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1763.4822372083336
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1773.5787443333334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 63
+  AlienOrder: ''
+  BlockNum: 5
+  Bonus: ''
+  DecayRate: 0.19265230592012927
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1773.580845916667
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 100
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.40641245833330686
+    state:
+      format: *id001
+      lastReset: 1752785622.251932
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.4062729166666941
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1783.1163259999998
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1793.2066020416669
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 64
+  AlienOrder: ''
+  BlockNum: 5
+  Bonus: ''
+  DecayRate: 0.22059018825582108
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1793.2087492083333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 102
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.9689152916666899
+    state:
+      format: *id001
+      lastReset: 1752785641.8556428
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.9687908333330597
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1803.282496875
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1813.376759625
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 65
+  AlienOrder: ''
+  BlockNum: 5
+  Bonus: ''
+  DecayRate: 0.19669506845537238
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1813.3788067916666
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 104
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.08216549999997369
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1822.5713485416668
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_69
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 20
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: NA
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1830.7158994583333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Too_slow
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 4
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 12.403259583333238
+    state:
+      format: *id001
+      lastReset: 1752785662.0311549
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.19795404166688968
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1834.8923098333335
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1845.0103822916667
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 66
+  AlienOrder: ''
+  BlockNum: 5
+  Bonus: ''
+  DecayRate: 0.17635805953821349
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1845.0128104583332
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 112
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.14330129166683037
+    state:
+      format: *id001
+      lastReset: 1752785693.662596
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.14317279166652952
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1854.2637243333334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1864.3608212916665
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 67
+  AlienOrder: ''
+  BlockNum: 5
+  Bonus: ''
+  DecayRate: 0.13002126928075622
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1864.3634116666667
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 92
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.08877083333300106
+    state:
+      format: *id001
+      lastReset: 1752785713.020339
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.08862479166691628
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1873.5668945833331
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1883.6652625000002
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 68
+  AlienOrder: ''
+  BlockNum: 5
+  Bonus: ''
+  DecayRate: 0.19002685834428815
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1883.667840125
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 99
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1.3750610833335486
+    state:
+      format: *id001
+      lastReset: 1752785732.3129191
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 1.3749295416664609
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1894.1457229583334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1904.2432503333334
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 69
+  AlienOrder: ''
+  BlockNum: 5
+  Bonus: ''
+  DecayRate: 0.14988613169203543
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1904.2453125416664
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 94
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.06681233333301861
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1913.4179987916664
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_70
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 14
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 4.584630124999876
+    state:
+      format: *id001
+      lastReset: 1752785752.893358
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.5267991666664784
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1917.9356867916663
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1928.0281532916665
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 70
+  AlienOrder: ''
+  BlockNum: 5
+  Bonus: ''
+  DecayRate: 0.22106532013726554
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1928.030273375
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 100
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.25449004166694067
+    state:
+      format: *id001
+      lastReset: 1752785776.672451
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.2543635000001814
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1937.3845885
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1947.495004375
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 71
+  AlienOrder: ''
+  BlockNum: 5
+  Bonus: ''
+  DecayRate: 0.2597222252566065
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1947.4971197083337
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 105
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 0.2732815416666199
+    state:
+      format: *id001
+      lastReset: 1752785796.132843
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.27315083333269286
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1956.8637303750002
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1966.9597508333336
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 72
+  AlienOrder: ''
+  BlockNum: 5
+  Bonus: ''
+  DecayRate: 0.17547692570967668
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1966.9620732916665
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 107
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.2768311250001716
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1976.3663943749998
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_71
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 19
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.26327820833330406
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1980.6119536249998
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_72
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 3
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 8.84113595833287
+    state:
+      format: *id001
+      lastReset: 1752785815.6318588
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.33519645833348477
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1984.9305582916663
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1995.0205726666663
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
+- AlienIndex: 73
+  AlienOrder: ''
+  BlockNum: 5
+  Bonus: ''
+  DecayRate: 0.23848802844968853
+  Galaxy: 0
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 1995.0228334166663
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: start_loop
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 95
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.09540645833294548
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 2004.21518925
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_73
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 23
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.22537391666674012
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 2008.4364970000001
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_74
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 5
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.1281585833335157
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 2012.547027
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_75
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 1
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.2531201250003505
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 2016.7863337916665
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Dig_Trial_76
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: 0
+  ID: ''
+  PRT: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 17.44978866666679
+    state:
+      format: *id001
+      lastReset: 1752785843.662174
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: 0.7866484166665941
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 2021.5694648333333
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Trial
+- AlienIndex: ''
+  AlienOrder: ''
+  BlockNum: ''
+  Bonus: ''
+  DecayRate: ''
+  Galaxy: ''
+  GemValue: ''
+  ID: ''
+  PRT: ''
+  QuizFailedNum: ''
+  QuizResp: ''
+  RT: ''
+  TimeElapsed: !!python/object/new:psychopy.clock.Timestamp
+    args:
+    - 2031.6627548333336
+    state:
+      format: *id001
+      lastReset: 1752783839.5482
+  TimeInBlock: ''
+  TrialType: Travel_Planet
