@@ -311,10 +311,10 @@ def show_animation(images, frame_time=0.667,test=False,gem_img=hundred_img):
     stim = visual.ImageStim(win, image=gem_img, size=(1.2,1.2)) # After animation shows image with gems with img path gem_img
     stim.draw()
     win.flip()
-    core.wait(1.5)
+    core.wait(make_jitter(minJit=3,meanJit=4,maxJit=7)) ### TESTING TO JITTER REWARD TIME
     if test == False: # Test is for the instruction digging trial, not practice nor main phase
-        stim = visual.ImageStim(win, image=land_img, size=(1.2,1.2)) # After animation shows image with gems with img path gem_img
-        stim.draw()
+        img_stim = visual.ImageStim(win, image=land_img, size=(1.2,1.2)) # After animation shows image with gems with img path gem_img
+        img_stim.draw()
         response_clock = core.Clock() # for rt data collection
         if first_planet:
             prt_clock = core.Clock() # Turns on prt timer when the first visit to the planet occurs
@@ -323,6 +323,9 @@ def show_animation(images, frame_time=0.667,test=False,gem_img=hundred_img):
         win.flip()
         keys = event.waitKeys(maxWait=2,keyList= keyList,timeStamped = response_clock) # can only take a or l
         if keys:
+            img_stim.draw()
+            win.flip()
+            core.wait(make_jitter(minJit=2,meanJit=4,maxJit=7)) ### TESTING for decision delay
             key,RT = keys[0] # RT used for data collection
             if keyList[0] in key: # Dig more
                 if decay: # practice trials do not have decay
@@ -575,6 +578,15 @@ def rest_homebase():
         "Bonus":""
     })
 
+def make_jitter(minJit=2, meanJit=4, maxJit=7):
+    u =np.random.rand()
+    # Exponential transform
+    jitter = -np.ceil(np.log(u) / (1/meanJit)) + minJit
+    # Cap at maximum
+    if jitter > maxJit:
+        jitter = maxJit 
+    return jitter
+
 # Where the main task is run
 def block_loop(blockNum):
     """Main task loop divided into blocks"""
@@ -611,7 +623,7 @@ def block_loop(blockNum):
             "TimeInBlock": "",
             "Bonus":""
         })
-        show_image(img_path=planets[alien_index],duration=5) # Show the first alien welcome
+        show_image(img_path=planets[alien_index],duration=3) # Show the first alien welcome
         dig_instruction(gems=gem_path) # And first digging trial done automatically
         alien_index += 1
         
@@ -665,30 +677,32 @@ def save_data(participant_id, trials):
 
 # Main experiment flow
 
-show_text("Howdy! In this experiment, you’ll be an explorer traveling through space to collect space treasure. Your mission is to collect as much treasure as possible. Press the space bar to begin reading the instructions!",image_path=intro_ast,y=0.7,x=0.4)
+############################################################# TIMELINE #############################################################
 
-show_text("As a space explorer, you’ll visit different planets to dig for space treasure, these pink gems. The more space treasure you mine, the more bonus payment you’ll win! \n\n[Press the space bar to continue]",image_path=intro_gem_img)
+# show_text("Howdy! In this experiment, you’ll be an explorer traveling through space to collect space treasure. Your mission is to collect as much treasure as possible. Press the space bar to begin reading the instructions!",image_path=intro_ast,y=0.7,x=0.4)
 
-show_text("When you’ve arrived at a new planet, you will dig once.\n\nThen, you get to decide if you want to stay on the planet and dig again or travel to a new planet and dig there. \n\nTo stay and dig, press the letter ‘A’ on the keyboard. Try pressing it now!",image_path=land_img,height=0.6,x=1,y=1)
+# show_text("As a space explorer, you’ll visit different planets to dig for space treasure, these pink gems. The more space treasure you mine, the more bonus payment you’ll win! \n\n[Press the space bar to continue]",image_path=intro_gem_img)
 
-dig_instruction(practice=True)
+# show_text("When you’ve arrived at a new planet, you will dig once.\n\nThen, you get to decide if you want to stay on the planet and dig again or travel to a new planet and dig there. \n\nTo stay and dig, press the letter ‘A’ on the keyboard. Try pressing it now!",image_path=land_img,height=0.6,x=1,y=1)
 
-show_text("The longer you mine a planet the fewer gems you’ll get with each dig.\n\nWhen gems are running low, you may want to travel to a new planet that hasn’t been overmined.\n\nPlanets are very far apart in this galaxy, so it will take some time to travel between them.\n\nThere are lots and lots of planets for you to visit, so you won’t be able to return to any planets you’ve already visited.\n\nTo leave this planet and travel to a new one, press the letter ‘L’ on the keyboard. Try pressing it now!",image_path=intro_travel,height=0.6,x=0.8,y=0.8,text_height=0.05)
+# dig_instruction(practice=True)
 
-travel_trial()
+# show_text("The longer you mine a planet the fewer gems you’ll get with each dig.\n\nWhen gems are running low, you may want to travel to a new planet that hasn’t been overmined.\n\nPlanets are very far apart in this galaxy, so it will take some time to travel between them.\n\nThere are lots and lots of planets for you to visit, so you won’t be able to return to any planets you’ve already visited.\n\nTo leave this planet and travel to a new one, press the letter ‘L’ on the keyboard. Try pressing it now!",image_path=intro_travel,height=0.6,x=0.8,y=0.8,text_height=0.05)
 
-show_text("When you arrive at a new planet, an alien from that planet will greet you!\n\n[Press the space bar to continue]",image_path=intro_alien,height=0.6,y=1,x=1)
+# travel_trial()
 
-show_text("If you’re not fast enough in making a choice, you’ll have to wait a few seconds before you can make another one.\n\nYou can’t dig for more gems or travel to new planets. You just have to sit and wait.\n\n[Press the space bar to continue]",image_path=timeout_img,height=0.5,x=1,y=1)
+# show_text("When you arrive at a new planet, an alien from that planet will greet you!\n\n[Press the space bar to continue]",image_path=intro_alien,height=0.6,y=1,x=1)
 
-show_text("After digging and traveling for a while, you’ll be able to take a break at home base.\n\nYou can spend at most 1 minute at home base — there are still a lot of gems left to collect!\n\nYou will spend 30 minutes mining gems and traveling to new planets no matter what.\n\nYou will visit home base every 6 minutes, so, you will visit home base four times during the game.\n\n[Press the space bar to continue]",image_path=home_base,height=0.5,x=1,y=1,text_height=0.05)
+# show_text("If you’re not fast enough in making a choice, you’ll have to wait a few seconds before you can make another one.\n\nYou can’t dig for more gems or travel to new planets. You just have to sit and wait.\n\n[Press the space bar to continue]",image_path=timeout_img,height=0.5,x=1,y=1)
 
-run_quiz(questions=questions,choices=choices,correct_answers=correct_answers)
+# show_text("After digging and traveling for a while, you’ll be able to take a break at home base.\n\nYou can spend at most 1 minute at home base — there are still a lot of gems left to collect!\n\nYou will spend 30 minutes mining gems and traveling to new planets no matter what.\n\nYou will visit home base every 6 minutes, so, you will visit home base four times during the game.\n\n[Press the space bar to continue]",image_path=home_base,height=0.5,x=1,y=1,text_height=0.05)
 
-show_text("Now, you'll play a practice game, so you can practice mining space treasure and traveling to new planets.\n\nIn the practice game, you'll be digging up barrels of gems. But, in the real game, you'll be digging up the gems themselves.\n\nPress the space bar to begin practice!", height=0)
+# run_quiz(questions=questions,choices=choices,correct_answers=correct_answers)
 
-show_image(img_path=practice_alien,duration=5)
-dig_instruction(gems=barrel_img)
+# show_text("Now, you'll play a practice game, so you can practice mining space treasure and traveling to new planets.\n\nIn the practice game, you'll be digging up barrels of gems. But, in the real game, you'll be digging up the gems themselves.\n\nPress the space bar to begin practice!", height=0)
+
+# show_image(img_path=practice_alien,duration=3)
+# dig_instruction(gems=barrel_img)
 
 show_button_text(text="Now that you know how to dig for space treasure and travel to new planets, you can start exploring the universe!\n\nDo you want to play the practice game again or get started with the real game?")
 
