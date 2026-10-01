@@ -180,8 +180,8 @@ def show_text(text, duration=0, image_path=None,x=0.5,y=0.6,height=0.3,text_heig
     if home: # Code for when they are at homebase, as there is a 1 minute timer that can be ended early with a keypress
         timer = core.Clock()
         while timer.getTime() < duration:
-            keys = event.getKeys(keyList=["space"])
-            if "space" in keys:
+            keys = event.getKeys(keyList=["e"])
+            if "e" in keys:
                 break 
     else:
         if duration > 0: # Only timed instruction is for the too slow img
@@ -558,7 +558,7 @@ def repeat_inst():
 def rest_homebase():
     """When participants need to rest at homebase"""
     global study,experiment_clock,block_time
-    show_text(text="You have been traveling for a while. Time to take a rest at home base!\n\nWhen you are ready to move one, press the space bar. You have up to a minute of rest.",height=0.5,image_path=home_base,x=1,y=1,duration=60,home=True)
+    show_text(text="You have been traveling for a while. Time to take a break at home base!",height=0.5,image_path=home_base,x=1,y=1,duration=60,home=True)
     show_text("The task is continuing now",height=0,duration=1.5)
     study.append({
         "ID": "",
@@ -673,51 +673,63 @@ def save_data(participant_id, trials):
 
     print(f"Data saved to {filename}") # Confirmation that data saved
 
-
+def calibration_cross():
+    global experiment_clock
+    stim = visual.TextStim(win, text='+', color='black', height=0.25, pos=(0, 0), wrapWidth=config['params']['TEXTBOX_WIDTH'])
+    stim.draw() # Pushes it to screen
+    event.waitKeys(keyList=['5'])
+    print("Next run starting")
+    experiment_clock = core.Clock()
+    show_text(text="+", text_height=0.25, duration=12)
 
 # Main experiment flow
 
 ############################################################# TIMELINE #############################################################
 
-# show_text("Howdy! In this experiment, you’ll be an explorer traveling through space to collect space treasure. Your mission is to collect as much treasure as possible. Press the space bar to begin reading the instructions!",image_path=intro_ast,y=0.7,x=0.4)
+show_text("Howdy! In this experiment, you’ll be an explorer traveling through space to collect space treasure. Your mission is to collect as much treasure as possible. Press the space bar to begin reading the instructions!",image_path=intro_ast,y=0.7,x=0.4)
 
-# show_text("As a space explorer, you’ll visit different planets to dig for space treasure, these pink gems. The more space treasure you mine, the more bonus payment you’ll win! \n\n[Press the space bar to continue]",image_path=intro_gem_img)
+show_text("As a space explorer, you’ll visit different planets to dig for space treasure, these pink gems. The more space treasure you mine, the more bonus payment you’ll win! \n\n[Press the space bar to continue]",image_path=intro_gem_img)
 
-# show_text("When you’ve arrived at a new planet, you will dig once.\n\nThen, you get to decide if you want to stay on the planet and dig again or travel to a new planet and dig there. \n\nTo stay and dig, press the letter ‘A’ on the keyboard. Try pressing it now!",image_path=land_img,height=0.6,x=1,y=1)
+show_text("When you’ve arrived at a new planet, you will dig once.\n\nThen, you get to decide if you want to stay on the planet and dig again or travel to a new planet and dig there. \n\nTo stay and dig, press the letter ‘A’ on the keyboard. Try pressing it now!",image_path=land_img,height=0.6,x=1,y=1)
 
-# dig_instruction(practice=True)
+dig_instruction(practice=True)
 
-# show_text("The longer you mine a planet the fewer gems you’ll get with each dig.\n\nWhen gems are running low, you may want to travel to a new planet that hasn’t been overmined.\n\nPlanets are very far apart in this galaxy, so it will take some time to travel between them.\n\nThere are lots and lots of planets for you to visit, so you won’t be able to return to any planets you’ve already visited.\n\nTo leave this planet and travel to a new one, press the letter ‘L’ on the keyboard. Try pressing it now!",image_path=intro_travel,height=0.6,x=0.8,y=0.8,text_height=0.05)
+show_text("The longer you mine a planet the fewer gems you’ll get with each dig.\n\nWhen gems are running low, you may want to travel to a new planet that hasn’t been overmined.\n\nPlanets are very far apart in this galaxy, so it will take some time to travel between them.\n\nThere are lots and lots of planets for you to visit, so you won’t be able to return to any planets you’ve already visited.\n\nTo leave this planet and travel to a new one, press the letter ‘L’ on the keyboard. Try pressing it now!",image_path=intro_travel,height=0.6,x=0.8,y=0.8,text_height=0.05)
 
-# travel_trial()
+travel_trial()
 
-# show_text("When you arrive at a new planet, an alien from that planet will greet you!\n\n[Press the space bar to continue]",image_path=intro_alien,height=0.6,y=1,x=1)
+show_text("When you arrive at a new planet, an alien from that planet will greet you!\n\n[Press the space bar to continue]",image_path=intro_alien,height=0.6,y=1,x=1)
 
-# show_text("If you’re not fast enough in making a choice, you’ll have to wait a few seconds before you can make another one.\n\nYou can’t dig for more gems or travel to new planets. You just have to sit and wait.\n\n[Press the space bar to continue]",image_path=timeout_img,height=0.5,x=1,y=1)
+show_text("If you’re not fast enough in making a choice, you’ll have to wait a few seconds before you can make another one.\n\nYou can’t dig for more gems or travel to new planets. You just have to sit and wait.\n\n[Press the space bar to continue]",image_path=timeout_img,height=0.5,x=1,y=1)
 
-# show_text("After digging and traveling for a while, you’ll be able to take a break at home base.\n\nYou can spend at most 1 minute at home base — there are still a lot of gems left to collect!\n\nYou will spend 30 minutes mining gems and traveling to new planets no matter what.\n\nYou will visit home base every 6 minutes, so, you will visit home base four times during the game.\n\n[Press the space bar to continue]",image_path=home_base,height=0.5,x=1,y=1,text_height=0.05)
+show_text("After digging and traveling for a while, you’ll be able to take a break at home base.\n\nYou can spend at most 1 minute at home base — there are still a lot of gems left to collect!\n\nYou will spend 30 minutes mining gems and traveling to new planets no matter what.\n\nYou will visit home base every 6 minutes, so, you will visit home base four times during the game.\n\n[Press the space bar to continue]",image_path=home_base,height=0.5,x=1,y=1,text_height=0.05)
 
-# run_quiz(questions=questions,choices=choices,correct_answers=correct_answers)
+run_quiz(questions=questions,choices=choices,correct_answers=correct_answers)
 
-# show_text("Now, you'll play a practice game, so you can practice mining space treasure and traveling to new planets.\n\nIn the practice game, you'll be digging up barrels of gems. But, in the real game, you'll be digging up the gems themselves.\n\nPress the space bar to begin practice!", height=0)
+show_text("Now, you'll play a practice game, so you can practice mining space treasure and traveling to new planets.\n\nIn the practice game, you'll be digging up barrels of gems. But, in the real game, you'll be digging up the gems themselves.\n\nPress the space bar to begin practice!", height=0)
 
-# show_image(img_path=practice_alien,duration=3)
-# dig_instruction(gems=barrel_img)
+show_image(img_path=practice_alien,duration=3)
+dig_instruction(gems=barrel_img)
 
 show_button_text(text="Now that you know how to dig for space treasure and travel to new planets, you can start exploring the universe!\n\nDo you want to play the practice game again or get started with the real game?")
 
+calibration_cross()
 block_loop(1)
 rest_homebase()
 
+calibration_cross()
 block_loop(2)
 rest_homebase()
 
+calibration_cross()
 block_loop(3)
 rest_homebase()
 
+calibration_cross()
 block_loop(4)
 rest_homebase()
 
+calibration_cross()
 block_loop(5)
 
 #Save data
